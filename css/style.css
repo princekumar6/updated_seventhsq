@@ -31,7 +31,7 @@ a{
 header{
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to right, lightgrey, lightyellow);
+    background-image: linear-gradient(to right, orange, yellow);
     width: 100%;
     z-index: 1000;
 }
@@ -104,7 +104,7 @@ flex: .7;
 }
 .logo-container img{
     width: 220px;
-    height: 80px;
+    height: 100px;
 }
 .nav-btn{
     display: flex;
@@ -120,13 +120,6 @@ flex: .7;
     padding-top: 2%;
     border-radius: 0px 0px 10px 10px;
 }
-.nav-links{
-    width: 600px;
-    height: 50px;
-    text-align: center;
-    line-height: 20px;
-}
-
 .log-sign{
     padding-top: 5px;
     margin-left: 50px;
@@ -136,7 +129,7 @@ flex: .7;
     flex-direction: row;
 }
 .fa-map-marker-alt, .fa-user, .fa-shopping-cart{
-    font-size: 20px;
+    font-size: 25px;
     color: #555;
 }
 .fa-search{
@@ -149,11 +142,12 @@ flex: .7;
 .log-sign a{
     margin-left: 40px;
 }
+/* main navbar starts from here */
 .logo-container img{
     display:flex;
     justify-content: center;
-    height: 60px;
-    width: 180px;
+    height: 40px;
+    width: 160px;
     padding: .5%;
 }
 .nav-links > ul{
@@ -165,7 +159,7 @@ flex: .7;
 .nav-link{
     position: relative;
 }
-
+/* 
 .nav-link > a{
     line-height: 2rem;
     color: #555;
@@ -179,17 +173,17 @@ flex: .7;
 }
 .nav-link:hover > a{
     transform: scale(1.1);
-}
+} */
 
 .dropdown{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    transform: translateX(10px);
-    opacity: 0;
-    pointer-events: none;
-    transition: .5s;
+ position: absolute;
+            left: 0;
+            border-radius: 0 0 10px 10px;
+            background-image: radial-gradient(lightblue, lightgrey);
+            width: 100%;
+            display: none;
+            color: rgb(43, 41, 41);
+            padding: 1em;
 }
 
 .dropdown ul{
@@ -219,24 +213,6 @@ flex: .7;
 .dropdown-link i{
     transform: rotate(-90deg);
 }
-
-.arrow{
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    top: -5.5px;
-    left: 32px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    cursor: pointer;
-    transition: .3s;
-    z-index: -1;
-}
-
-.dropdown-link:first-child:hover ~ .arrow{
-    background-color: #555;
-}
-
 .dropdown-link{
     position: relative;
 }

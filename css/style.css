@@ -526,7 +526,7 @@ h4{
   =========================================================================================
   */
   .col-md-3{
-      width: 210px !important;
+      width: 200px !important;
   }
   .col-md-3 .social_link{
       margin: 0;
@@ -551,7 +551,7 @@ h4{
 .footer-wrap p {
     font-size: 13px;
     line-height: 24px;
-    color: #b3b3b3;
+    color: whitesmoke;
     margin-top: 15px;
 }
 

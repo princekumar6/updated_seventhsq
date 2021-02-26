@@ -31,9 +31,9 @@ a{
 header{
     position: sticky;
     top: 0;
-    background-color: lightsalmon;
+    background-color: white;
     width: 100%;
-    height: 140px;
+    height: 135px;
     z-index: 1000;
 }
 
@@ -98,6 +98,7 @@ flex: .7;
     align-items: center;
 }
 .logo-container img{
+    padding-left: 30px;
     width: 220px;
     height: 80px;
 }
@@ -112,20 +113,34 @@ flex: .7;
 .input__box{
     display:flex;
     flex-direction:row;
-    padding-top: 0%;
+    padding-top: 1%;
     border-radius: 0px 0px 10px 10px;
+    border: 0px solid white !important;
 }
 .log-sign{
-    padding-top: 5px;
-    margin-left: 50px;
+    padding-top: 4px;
+    margin-left: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
+.location i{
+    margin-left: 30px!important;
+}
+.location select{
+    height: 30px;
+    width: auto;
+}
+.log-sign span{
+    padding-top: 3%;
+    margin: 6%;
+    font-size: 12px;
+    color: #222;
+}
 .fa-map-marker-alt, .fa-user, .fa-shopping-cart{
-    padding-top: 15px;
-    font-size: 25px;
+    margin-top: 6px;
+    font-size: 27px;
     color: #555;
 }
 .fa-search{
@@ -144,7 +159,7 @@ flex: .7;
     justify-content: center;
     height: 50px;
     width: 180px;
-    padding: .5%;
+    padding: .7%;
 }
 .nav-links > ul{
     display: flex;
@@ -510,6 +525,13 @@ h4{
                                     footer
   =========================================================================================
   */
+  .col-md-3{
+      width: 210px !important;
+  }
+  .col-md-3 .social_link{
+      margin: 0;
+      padding: 0;
+  }
   .footer-logo{
       margin-left: 20px;
       margin-bottom: 40px;
@@ -605,7 +627,6 @@ h4{
 }
 
 .copyright {
-    border-top: 1px solid #111;
     font-size: 14px;
     color: #ccc;
     padding-top: 15px;
@@ -614,13 +635,11 @@ h4{
     background: #222;
 }
 footer .second_class{
-    border-bottom: 1px solid #444;
     padding-bottom: 25px;
 }
 footer .first_class {
     padding-top: 5%;
     padding-bottom: 21px;
-    border-bottom: 1px solid #444;
 }
 footer .first_class p, footer .first_class h3{
     margin: 0 0;

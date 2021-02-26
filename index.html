@@ -28,6 +28,7 @@
             list-style: none;
             position: relative;
             text-align: left;
+            height: 30px;
         }
 
         nav li {
@@ -44,7 +45,7 @@
         }
 
         .header_li a :hover {
-        background-color: lightcyan;
+        background-color: white;
         border-radius: 10px 10px 0 0 ;
         color: #444;
         }
@@ -58,8 +59,8 @@
         .menu-sub {
             position: absolute;
             left: 0;
-            border-radius: 0 0 10px 10px;
-            background-color: lightcyan;
+            border-radius: 0 0 1px 1px;
+            background-color: whitesmoke;
             width: 100%;
             display: none;
             color: rgb(43, 41, 41);
@@ -145,16 +146,21 @@
                                 aria-label="Search Your Product" aria-describedby="button-addon2"><i
                                 class="fas fa-search"></i>
                         </li>
-                        <li class="log-sign nav-link input__box" style="--i: .85s">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <li class="log-sign location" style="--i: .85s">
+                            <i class="fas fa-map-marker-alt"></i><span><select class="custom-select">
+                                <option selected>City</option>
+                                <option value="1">Jaipur</option>
+                                <option value="2">Nvi Mumbai</option>
+                                <option value="3">Delhi</option>
+                              </select></span>
                         </li>
-
                         <li class="log-sign" style="--i: .85s">
-                            <a href="#"><i class="fas fa-user"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a><span>Cart</span>
                         </li>
                         <li class="log-sign" style="--i: .85s">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-user"></i></a> <span>Login</span>
                         </li>
+                        
                     </ul>
 
                 </div>
@@ -776,6 +782,17 @@
                                     <li><a href="#">RFI</a></li>
                                     <li><a href="#">Blanket PO</a></li>
                                     <li><a href="#">Payment options</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 social_link col-sm-8">
+                                <h3>Social Media Links</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Linkedin</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Pintrest</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Youtube</a></li>
                                 </ul>
                             </div>
                         </div>

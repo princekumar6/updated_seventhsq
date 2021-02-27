@@ -591,16 +591,17 @@ text-align:center;
 }
 .input__group ul input{
     margin-top: 20px;
-    border: none;
+    border: 3px solid crimson;
     box-shadow: 3px crimson; 
     border-radius: 20px 0 0 20px;  
 }
 .btn-theme{
     margin-top: 20px;
     width: auto;
-    height: 37px;
+    height: 40px;
+    border: 3px solid crimson;
     box-shadow: 3px crimson;
-    background-color: #ff523b;
+    background-color: crimson;
     border-radius: 0 20px 20px 0;
     font-size: 14px;
     padding: 5px;
@@ -612,12 +613,97 @@ text-align:center;
 .social__icons ul li{
     padding-left: 23px;
     padding-top: 20px;
-    grayscale : 0%;
-
 }
 .social__icons ul li:hover{
  transform: scale(1.1);
 
+}
+@media (max-width: 920px){
+    footer{
+        height: auto;
+        flex-direction:column;
+        justify-content:center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .first{
+        width: 100%;
+        height: auto;
+    }
+    .first img{
+        height: 60px;
+        margin-left: 130px;
+    
+    }
+    .first .address__bar{
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .first .cin{
+        padding-top: 0px;
+        text-align: center;
+    }
+    .second ,.third, .fourth{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .second{
+        padding: 0px;
+    }
+    .second h4, .third h4, .fourth h4{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .second p, .third p, .fourth p{
+    
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    .fifth{
+        width: 100%;
+        height: auto;
+    }
+    .fifth .h3{
+        text-align: center;
+    padding-top: 10px;
+        font-size: 26px;
+    }
+    .input__group ul{
+justify-content: center;
+        display:flex;
+        flex-direction:row;
+    }
+    .input__group ul input{
+        margin-top: 20px;
+        border: 2px solid crimson; 
+    }
+    .btn-theme{
+        margin-top: 20px;
+        width: auto;
+        height: 39px;
+        border: 2px solid crimson;
+        box-shadow: 3px crimson;
+        background-color: crimson;
+        border-radius: 0 20px 20px 0;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .social__icons ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .social__icons ul li{
+        padding-left: 43px;
+        padding-top: 20px;
+    }
+    .social__icons ul li:hover{
+     transform: scale(1.1);
+    
+    }
 }
 @keyframes animation{
     from{

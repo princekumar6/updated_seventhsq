@@ -33,7 +33,7 @@ header{
     top: 0;
     background-color: white;
     width: 100%;
-    height: 135px;
+    height: 125px;
     z-index: 1000;
 }
 
@@ -47,9 +47,9 @@ header{
 }
 /* upper panel starts from here */
 .upper-pannel{
-    height: 25px;
+    height: 23px;
     width: 100%;
-    background-color: #555;
+    background-color: rgb(201, 199, 199);
     display: flex;
     flex-direction: row;
 }
@@ -83,8 +83,9 @@ header{
     text-align: center;
     padding-bottom: 5px;
 }
-.container{
+.main-container{
     max-width: 100%;
+    height: 55px;
     padding: 0rem;
     margin: 0;
     display: flex;
@@ -98,11 +99,17 @@ flex: .7;
     align-items: center;
 }
 .logo-container img{
-    padding-left: 30px;
-    width: 220px;
-    height: 80px;
+    margin-top: 25px;
+    margin-left: 35px;
+    width: 160px;
+    height: 45px;
+    display:flex;
+    justify-content: center;
+
 }
 .nav-btn{
+    margin: 0% !important;
+    padding: 0% !important;
     display: flex;
     flex-direction: column;
 }
@@ -129,8 +136,10 @@ flex: .7;
     margin-left: 30px!important;
 }
 .location select{
+    margin-left: 20px;
+    border: none!important;
     height: 30px;
-    width: auto;
+    width: 100px;
 }
 .log-sign span{
     padding-top: 3%;
@@ -154,13 +163,7 @@ flex: .7;
     margin-left: 40px;
 }
 /* main navbar starts from here */
-.logo-container img{
-    display:flex;
-    justify-content: center;
-    height: 50px;
-    width: 180px;
-    padding: .7%;
-}
+
 .nav-links > ul{
     display: flex;
     justify-content: center;
@@ -507,243 +510,115 @@ h4{
 
 /* footer section is startting from here */
  
-  
-.round-btn {display: inline;height: 40px; width: 40px; background:#fff;border-radius: 50%;float: left;margin: 15px 8px;box-shadow: 2px 2px 5px 0px rgb(82, 0, 67);border: 1px solid;/*border: 1px solid #622657;*/}
-.round-btn a {display: block !important;padding: 7px 12px;font-size: 18px;border-radius: 50%;}
-.round-btn .icon {padding: 3px;}
-.round-btn .icon img{height: 24px; width: 32px;margin-top: 6px;}
-.btn-facebook a {color: #3b5998;padding: 8px 13px;}
-.btn-linkedin a {color: #007bb6;}
-.btn-twitter a{color: #1c9deb;}
-.btn-instagram a{color: #dd3f5c;}
-.btn-whatsapp a{color: #155E54;}
-.btn-envelop a{color: #D6403A;font-size: 15px; padding: 9px 12px;}
-.standard_header .standard_social_links {margin-left: 1rem;}
-
-  /*
-  =========================================================================================
-                                    footer
-  =========================================================================================
-  */
-  .col-md-3{
-      width: 200px !important;
-  }
-  .col-md-3 .social_link{
-      margin: 0;
-      padding: 0;
-  }
-  .footer-logo{
-      margin-left: 20px;
-      margin-bottom: 40px;
-  }
-  .footer-wrap {
-    padding-top: 43px;
-    background-size: cover;
-}
-
-.footer-wrap h3 {
-    color: #fff;
-    font-size: 17px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-
-.footer-wrap p {
-    font-size: 13px;
-    line-height: 24px;
-    color: whitesmoke;
-    margin-top: 15px;
-}
-
-.footer-wrap p a {
-    color: #fff;
-    font-style: italic;
-}
-
-.footer-wrap p a:hover {
-    text-decoration: none;
-    color: #ff7800;
-}
-
-.footer-links li a {
-    font-size: 13px;
-    line-height: 30px;
-    color: #ccc;
-    text-decoration: none;
-}
-
-
-.footer-links li:before {
-    font-family: 'FontAwesome';
-    padding-right: 10px;
-    color: #ccc;
-}
-
-.footer-category li a {
-    font-size: 13px;
-    line-height: 30px;
-    color: #ccc;
-    text-decoration: none;
-}
-
-.footer-category li:before {
-    font-family: 'FontAwesome';
-    padding-right: 10px;
-    color: #b3b3b3;
-}
-
-.address {
-    
-    color: #b3b3b3;
-    font-size: 14px;
-    position: relative;
-    padding-left: 30px;
-    line-height: 30px;
-}
-
-.address:before {
-
-    font-family: 'FontAwesome';
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.info a {
- 
-    color: #b3b3b3;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
-}
-
-
-.info a {
-
-    color: #b3b3b3;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
-}
-
-.copyright {
-    font-size: 14px;
-    color: #ccc;
-    padding-top: 15px;
-    text-align: center;
-    padding-bottom: 15px;
-    background: #222;
-}
-footer .second_class{
-    padding-bottom: 25px;
-}
-footer .first_class {
-    padding-top: 5%;
-    padding-bottom: 21px;
-}
-footer .first_class p, footer .first_class h3{
-    margin: 0 0;
-    
-}
 footer{
-    background: #333;
-}
-
-footer .newsletter input[type="text"] {
     width: 100%;
-    background: black;
-    color: #333;
-    border: 1px solid #222;
-    padding: 14px 20px;
-    border-radius: 50px;
-    margin-top: 12px;
+    background-color: #222;
+    color: #efefef;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
 }
 
-.newsletter .newsletter_submit_btn {
-    background:transparent;
+.first{
+    width: 25%;
+    height: 300px;
+}
+.first img{
+    height: 50px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+.first .address__bar{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.first .cin{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #efefef;
+}
+.second ,.third, .fourth{
+    width: 15%;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.second{
+    padding: 20px;
+}
+.second h4, .third h4, .fourth h4{
+    padding-top: 20px;
+    color:rgb(196, 191, 191);
+    font-size: 18px;
+    text-align: center;
+}
+.second p, .third p, .fourth p{
+
+    padding-left: 10px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    cursor: pointer;
+}
+
+.third{
+    padding: 10px;
+}
+.fourth{
+    padding: 10px;
+}
+.fifth{
+    width: 27%;
+    height: 300px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.fifth .h3{
+    margin: 0;
     color: white;
-    position: absolute;
-    right: 30px;
-    border: 0;
-    top: 26px;
-    font-size: 17px;
+    font-weight: 900;
+    font-family: cursive;
+padding-top: 30px;
+text-align:center;
+    font-size: 22px;
 }
-
-
-
-footer .btn-facebook a {
-    padding: 6px 14px !important;
+.input__group ul{
+    display:flex;
+    flex-direction:row;
 }
-
-footer .btn-envelop a {
-    color: #D6403A;
-    font-size: 15px;
-    padding: 12px 12px;
+.input__group ul input{
+    margin-top: 20px;
+    border: none;
+    box-shadow: 3px crimson; 
+    border-radius: 20px 0 0 20px;  
 }
-
-footer .round-btn a {
-    padding: 6px 12px;
+.btn-theme{
+    margin-top: 20px;
+    width: auto;
+    height: 37px;
+    box-shadow: 3px crimson;
+    background-color: #ff523b;
+    border-radius: 0 20px 20px 0;
+    font-size: 14px;
+    padding: 5px;
 }
-
-footer .round-btn {
-    box-shadow: 2px 2px 5px 0px #222 !important;}
-
-footer .round-btn {
-    margin: 15px 4px;}
-  
-footer dl, ol, ul {
-    padding-left: 5px;
+.social__icons ul{
+    display: flex;
+    flex-direction: row;
 }
-  footer li{
-    list-style: none;
-  }
+.social__icons ul li{
+    padding-left: 23px;
+    padding-top: 20px;
+    grayscale : 0%;
 
-@media(max-width:768px){
-    .footer-wrap h3 {
-    margin-top: 27px;}
-    
-    footer .round-btn {
-    margin: 15px 4px;}
-    footer .second_class{
-        text-align: center;
-    }
-    footer .first_class {
-        text-align: center;
-    }
-    .newsletter .newsletter_submit_btn {
-       display: flex;
-       flex-direction:row;
-    }
-    .standard_social_links {align-items: center;
-    padding-left: 15%;
-    }
-    .upper-pannel .help span{
-        display: none;
-        visibility: hidden;
-    }
 }
-@media(max-width:320px){
-.copyright {
-    font-size: 13px;}
-    footer .second_class{
-        text-align: center;
-    }
-    footer .first_class {
-        text-align: center;
-    }
-    .newsletter .newsletter_submit_btn {
-        display: flex;
-        flex-direction:row;
-     }
-.standard_social_links {align-items: center;
-        padding-left: 15%x;
-    }
-    .upper-pannel .help span{
-        display: none;
-        visibility: hidden;
-    }
-} 
+.social__icons ul li:hover{
+ transform: scale(1.1);
 
+}
 @keyframes animation{
     from{
         opacity: 0;

@@ -63,13 +63,13 @@ header{
 .upper-pannel .help span{
     font-size: small;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: #222;
 }
 .r_y_o{
     margin-left: 60%;
 }
 .r_y_o span{
-    color: white;
+    color: #222;
     font-size: small;
     text-align: center;
     padding-bottom: 5px;
@@ -78,7 +78,7 @@ header{
     margin-left: 5%;
 }
 .t_y_o span{
-    color:white;
+    color:#222;
     font-size: small;
     text-align: center;
     padding-bottom: 5px;
@@ -538,7 +538,7 @@ footer{
 .first .cin{
     padding-top: 10px;
     padding-left: 20px;
-    color: #efefef;
+    color: #555;
 }
 .second ,.third, .fourth{
     width: 15%;
@@ -578,7 +578,7 @@ footer{
 }
 .fifth .h3{
     margin: 0;
-    color: white;
+    color: #efefef;
     font-weight: 900;
     font-family: cursive;
 padding-top: 30px;
@@ -591,18 +591,19 @@ text-align:center;
 }
 .input__group ul input{
     margin-top: 20px;
-    border: 3px solid crimson;
-    box-shadow: 3px crimson; 
-    border-radius: 20px 0 0 20px;  
+    border: 1px solid grey;
+    box-shadow: 1px  grey; 
+    border-radius: 5px 0 0 5px;  
 }
 .btn-theme{
     margin-top: 20px;
     width: auto;
     height: 40px;
-    border: 3px solid crimson;
-    box-shadow: 3px crimson;
-    background-color: crimson;
-    border-radius: 0 20px 20px 0;
+    border: none;
+    color: white;
+    box-shadow: 1px #777;
+    background-color: black;
+    border-radius: 0 5px 5px 0;
     font-size: 14px;
     padding: 5px;
 }
@@ -685,10 +686,10 @@ justify-content: center;
         margin-top: 20px;
         width: auto;
         height: 39px;
-        border: 2px solid crimson;
-        box-shadow: 3px crimson;
-        background-color: crimson;
-        border-radius: 0 20px 20px 0;
+        border: 1px solid grey;
+        box-shadow: 1px grey;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
         font-size: 14px;
         padding: 5px;
     }

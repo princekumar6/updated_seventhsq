@@ -67,7 +67,9 @@
             color: rgb(43, 41, 41);
             padding: .5em;
         }
-
+.building{
+    width: 100%;
+}
         .construction-chemicals {
             position: absolute;
             top: 33px;
@@ -86,12 +88,21 @@
             left: 400px;
             border-radius: 0 0 1px 1px;
             background-color: whitesmoke;
-            width: auto;
+            width: 100%;
             display: none;
             color: rgb(43, 41, 41);
             padding: .5em;
         }
-
+        .hvac{
+            left: 100px;
+            width: 300px;
+        }
+        .sanitaryware{
+            left: 200px;
+        }
+.flooring{
+    left: 350px;
+}
         .menu-sub h4 {
             font-size: 17px;
             color: lightcoral;
@@ -129,7 +140,7 @@
         .menu-col-2,
         .menu-col-3,
         .menu-col-4 {
-            padding-left: 2.5em;
+            padding-left: 1.5em;
             float: left;
 
         }
@@ -176,7 +187,7 @@
                         </li>
                         <li class="log-sign location" style="--i: .85s">
                             <span><select class="custom-select">
-                                    <option selected>Select City </option>
+                                    <option selected>Select City &#x1F4CC; </option>
                                     <option value="1">Jaipur</option>
                                     <option value="2">Nvi Mumbai</option>
                                     <option value="3">Delhi</option>
@@ -186,7 +197,7 @@
                             <a href="#"><i class="fas fa-shopping-cart"></i></a><span>Cart</span>
                         </li>
                         <li class="log-sign" style="--i: .85s">
-                            <a href="#"><i class="fas fa-user"></i></a> <span>Login</span>
+                            <a href="#"><i class="fas fa-user"></i></a> <span>Login/Register</span>
                         </li>
 
                     </ul>
@@ -195,7 +206,7 @@
                     <div class="container">
                         <ul class="menu-main">
                             <li class="header_li"><a href="">Building Materials</a>
-                                <div class="menu-sub">
+                                <div class="menu-sub building">
 
                                     <div class="menu-col-1">
                                         <h4 class="menu-category">Bricks</h4>
@@ -273,46 +284,21 @@
                                 </div>
                             </li>
                             <li class="header_li"><a href="">HVAC</a>
-                                <div class="menu-sub">
-                                    <div class="menu-col-1">
+                                <div class="menu-sub hvac">
+                                    <div class="menu-col-2">
                                         <ul>
                                             <li><a href="">Exhaust Fans</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
                                             <li><a href="">Switchgears</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
                                             <li><a href="">Wires & Cables</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
-                                            <li><a href="">Stabilizer</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
                                             <li><a href="">Distribution Boards</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
                                             <li><a href="">Air Conditioner</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <ul>
                                             <li><a href="">Fans</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                             <li class="header_li"><a href="">Sanitaryware</a>
-                                <div class="menu-sub">
+                                <div class="menu-sub sanitaryware">
                                     <div class="menu-col-1">
                                         <ul>
                                             <li><a href="">Faucets</a></li>
@@ -339,7 +325,7 @@
                                 </div>
                             </li>
                             <li class="header_li"><a href="">Flooring & wall</a>
-                                <div class="menu-sub">
+                                <div class="menu-sub flooring">
 
                                     <div class="menu-col-1">
                                         <ul>
@@ -363,17 +349,13 @@
                                             <li><a href="">Oxide Powder</a></li>
                                             <li><a href="">Marble Powder/ Lime</a></li>
                                         </ul>
-
-
-
-                                    </div>
-
-                                    <div class="menu-col-1">
                                         <h4 class="menu-category">Flooring Accessories</h4>
                                         <ul>
                                             <li><a href="">Wall Base</a></li>
                                             <li><a href="">Maoulding</a></li>
                                         </ul>
+
+
                                     </div>
 
                                 </div>
@@ -771,33 +753,32 @@
             </div>
             <div class="second">
                 <h4 class="second-about"> About</h4>
-                <p><i class="fas fa-arrow-right"></i> About Us</p>
-                <p><i class="fas fa-arrow-right"></i> Blog</p>
-                <p><i class="fas fa-arrow-right"></i> Sell on SeventhSq.</p>
-                <p><i class="fas fa-arrow-right"></i> Media</p>
-                <p><i class="fas fa-arrow-right"></i> Careers</p>
-                <p><i class="fas fa-arrow-right"></i> Customer Stories</p>
+                <p> About Us</p>
+                <p>Blog</p>
+                <p>Sell on Seventh Square</p>
+                <p> Media</p>
+                <p> Careers</p>
+                <p> Customer Stories</p>
             </div>
             <div class="third">
                 <h4>Help</h4>
-                <p><i class="fas fa-arrow-right"></i> Contact Us</p>
-                <p><i class="fas fa-arrow-right"></i> Terms & Consitions</p>
-                <p><i class="fas fa-arrow-right"></i> Privacy Policy</p>
-                <p><i class="fas fa-arrow-right"></i> FAQ's</p>
-                <p><i class="fas fa-arrow-right"></i> Track Your Order</p>
-                <p><i class="fas fa-arrow-right"></i> Chat with us</p>
+                <p>Contact Us</p>
+                <p>Terms & Consitions</p>
+                <p>Privacy Policy</p>
+                <p> FAQ's</p>
+                <p>Track Your Order</p>
             </div>
             <div class="fourth">
                 <h4>Resources</h4>
-                <p><i class="fas fa-arrow-right"></i> How it Works</p>
-                <p><i class="fas fa-arrow-right"></i> RFQ</p>
-                <p><i class="fas fa-arrow-right"></i> RFP</p>
-                <p><i class="fas fa-arrow-right"></i> RFI</p>
-                <p><i class="fas fa-arrow-right"></i> Blanket PO</p>
-                <p><i class="fas fa-arrow-right"></i> Payment Options</p>
+                <p>How it Works</p>
+                <p>Request for Quote</p>
+                <p>Request for Proporsal</p>
+                <p>Request for Information</p>
+                <p>Blanket PO</p>
+                <p>Payment Options</p>
             </div>
             <div class="fifth">
-                <h2 class="title h3">Subscribe our Newsletter</h2>
+                <h2 class=" h3">Subscribe our Newsletter</h2>
                 <div class="input__group">
                     <ul>
                         <li><input type=" email" class="form-control" placeholder="Enter your email"></li>
@@ -818,11 +799,11 @@
         </footer>
         <div style="padding: 12px;background: #01011e;color: rgb(255,255,255);">
             <div class="row">
-              <div class="col-sm-12 col-md-6 col-xl-8" style="padding-top: 5px;padding-bottom: 5px;text-align: center;">
+              <div class="col-sm-12 col-md-2 col-xl-8" style="padding-top: 5px;padding-bottom: 5px;text-align: center;">
                 <span style="font-size: 14px;">Copyright © 2021<a href="#">&nbsp;</a>Seventh Square
                   Internet Pvt. Ltd.</span>
               </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 d-none d-md-block"
+              <div class="col-sm-12 col-md-2 col-xl-4 d-none d-md-block"
                 style="padding: 0px;text-align: center;border-left: 1px solid rgba(255,255,255,0.6) ;">
                 <div><img src="img/p.jpg" style="margin-top: 5px;"></div>
               </div>

@@ -121,8 +121,11 @@ flex: .7;
     display:flex;
     flex-direction:row;
     padding-top: 1%;
-    border-radius: 0px 0px 10px 10px;
-    border: 0px solid white !important;
+    border-radius: 5px 0 0 5px; 
+    border: none !important;
+}
+.input__box input{
+    border-radius: 5px 0 0 5px !important; 
 }
 .log-sign{
     padding-top: 4px;
@@ -132,14 +135,16 @@ flex: .7;
     align-items: center;
     flex-direction: row;
 }
-.location i{
-    margin-left: 30px!important;
-}
 .location select{
     margin-left: 20px;
     border: none!important;
     height: 30px;
-    width: 100px;
+    width: auto;
+}
+.location select option{
+    border: 2px solid #666;
+    height: 30px!important;
+    width: 100px !important;
 }
 .log-sign span{
     padding-top: 3%;
@@ -154,10 +159,11 @@ flex: .7;
 }
 .fa-search{
     padding: 2% !important;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
+    border-radius: 0 5px 5px 0 !important;
+    cursor: pointer;
     left:0;
-    background-color:transparent;
+    color:white;
+    background-color:#555;
 }
 .log-sign a{
     margin-left: 40px;
@@ -547,7 +553,7 @@ footer{
 }
 
 .second{
-    padding: 20px;
+    padding-top: 10px;
 }
 .second h4, .third h4, .fourth h4{
     padding-top: 20px;
@@ -612,12 +618,16 @@ text-align:center;
     flex-direction: row;
 }
 .social__icons ul li{
-    padding-left: 23px;
+    padding-left: 18px;
     padding-top: 20px;
 }
 .social__icons ul li:hover{
  transform: scale(1.1);
 
+}
+.bottomnav .row{
+    height: 40px !important;
+    padding: 2px;
 }
 @media (max-width: 920px){
     footer{

@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: lightgray;
   padding-top: 30px;
+  font-family: Arial;
 }
 .main__block {
   width: 70%;

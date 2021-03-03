@@ -32,7 +32,7 @@
 }
 .right__panel .login__heading h3 {
   text-align: center;
-  color: orangered;
+  color: black;
   font-size: 30px;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,33 +48,35 @@ login section */
   flex-direction: column;
   width: 450px;
   pointer-events: auto;
-  background-color: rgb(245, 241, 241);
-  border: 1px solid #999;
-  box-shadow: 5px 10px #888888;
-  border-radius: .3rem;
   outline: 0;
 }
 .Main__box{
     margin-left: 110px;
 }
-.main__input-box{
-    display:flex;
-    flex-direction: row;
+.contact_line{
+ display: flex;
+ flex-direction: row;  
 }
-.contact, .password{
+.contact, .password, .verify{
 
     margin-top: 10px;
     width: 380px;
-    border-radius: 20px;
-    border : 2px solid coral;
+    border-radius:5px;
+    border : 1px solid rgb(194, 194, 194);
     background-color: rgb(245, 244, 244);
     color: #111;
     
 }
 .contact{
-    width: 280px;
+    width: 230px;
     height: 40px;
 }
+.verify{
+    margin-left: 50px;
+    width: 100px;
+    background-color: #666;
+}
+
 .tx-tfm {
   text-transform: uppercase;
   height: 40px;
@@ -87,12 +89,71 @@ form .error {
 }
 .button_line{
     display: flex;
-    flex-direction: row;
-    padding-left: 40px;
+flex-direction: column;
 }
-.button_line button{
+.button_line .button{
+    margin-top: 20px;
+    width: 380px;
+    border:1px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #999;
+    padding: 0;
+}
+.button_line .forget_button{
+    margin-top: 0px;
+    width: 180px;
+    border:1px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #999;
+    padding: 0;
+}
+.forget_button-line{
+    display: flex;
+flex-direction: row;
+}
+.forget_button-line .help{
     margin-left: 20px;
 }
-#second {
-  display: none;
+.Donthaveacc a{
+color: grey;
+}
+
+/* signup page code start */
+.Login__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Login__body .individual{
+    padding: 12px;
+ text-align: center;
+    width: 70%;
+    margin: 30px;
+    height: 60px;
+    background-color: #111;
+    color: grey;
+}
+.Login__body .individual a, .Login__body .institutional a{
+    color: #999;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.Login__body .institutional{
+    padding: 12px;
+    text-align: center;
+    width:70%;
+    height: 60px;
+    margin: 30px;
+    background-color: #111;
+    color: grey;
+}
+.back-menu{
+bottom: 0;
+left:0;
+background-color:black;
+width: 80px;
+margin-top: 100px;
 }

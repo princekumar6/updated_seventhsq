@@ -1,0 +1,98 @@
+.login__section {
+  width: 100%;
+  height: 100vh;
+  background-color: #999;
+  padding-top: 30px;
+}
+.main__block {
+  width: 70%;
+  height: 70vh;
+  background-color: #888;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 15%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.left__panel {
+  width: 40%;
+  height: 70vh;
+  background-color: rgb(50, 168, 168);
+}
+.right__panel {
+  width: 60%;
+  background-color: rgb(223, 223, 223);
+  height: 70vh;
+}
+.right__panel .login__heading {
+  padding: 10px;
+  margin: 10px;
+}
+.right__panel .login__heading h3 {
+  text-align: center;
+  color: orangered;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+login section */
+
+.myform {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 450px;
+  pointer-events: auto;
+  background-color: rgb(245, 241, 241);
+  border: 1px solid #999;
+  box-shadow: 5px 10px #888888;
+  border-radius: .3rem;
+  outline: 0;
+}
+.Main__box{
+    margin-left: 110px;
+}
+.main__input-box{
+    display:flex;
+    flex-direction: row;
+}
+.contact, .password{
+
+    margin-top: 10px;
+    width: 380px;
+    border-radius: 20px;
+    border : 2px solid coral;
+    background-color: rgb(245, 244, 244);
+    color: #111;
+    
+}
+.contact{
+    width: 280px;
+    height: 40px;
+}
+.tx-tfm {
+  text-transform: uppercase;
+  height: 40px;
+}
+.mybtn {
+  border-radius: 50px;
+}
+form .error {
+  color: #222;
+}
+.button_line{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+}
+.button_line button{
+    margin-left: 20px;
+}
+#second {
+  display: none;
+}

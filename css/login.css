@@ -17,14 +17,16 @@
   flex-direction: row;
 }
 .left__panel {
+    margin-top: 52px;
   width: 40%;
-  height: 70vh;
+  height: 78vh;
   background-color: rgb(50, 168, 168);
 }
 .right__panel {
+    margin-top: 52px;
   width: 60%;
   background-color: rgb(255, 255, 255);
-  height: 70vh;
+  height: 78vh;
 }
 .right__panel .login__heading {
   padding: 10px;
@@ -77,7 +79,7 @@ login section */
 }
 .form-group a:hover{
     color: #111;
-    transition: color 265ms;
+    transition: color 1s;
     
 }
 .tx-tfm {
@@ -129,6 +131,7 @@ color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
 }
 .Login__body .individual{
     padding: 12px;
@@ -136,7 +139,7 @@ color: grey;
     width: 70%;
     margin: 30px;
     height: 60px;
-    background-color: #111;
+    background-color: transparent;
     color: grey;
 }
 .Login__body .individual a, .Login__body .institutional a{
@@ -151,7 +154,7 @@ color: grey;
     width:70%;
     height: 60px;
     margin: 30px;
-    background-color: #111;
+    background-color: #fff;
     color: grey;
 }
 .back-menu{
@@ -160,4 +163,22 @@ left:0;
 background-color:black;
 width: 80px;
 margin-top: 100px;
+}
+/* individual signup styling is starts from here */
+
+.contact_line{
+    display: flex;
+    flex-direction: row;
+}
+.phone input{
+    border: none;
+    width: 250px;
+    border-bottom: 2px solid #111;
+}
+.contact_line .phone_verify{
+    margin-left: 50px;
+    width: 80px;
+    border: 2px solid #111;
+    color: #999;
+    background-color: #444;
 }

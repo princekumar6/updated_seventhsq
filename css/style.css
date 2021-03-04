@@ -728,10 +728,26 @@ justify-content: center;
 }
 
 @media (max-width: 920px){
+    .upper-pannel .help span{
+        display: none;
+    }
+    .r_y_o span{
+visibility: hidden;
+    }
+    .t_y_o span{
+visibility: hidden;
+    }
     .hamburger-menu-container{
         display: flex;
-    }
 
+    }
+    header{
+
+        background-color: black;
+        width: 100%;
+        height: 105px;
+        z-index: 1000;
+    }
     #check{
         display: block;
     }

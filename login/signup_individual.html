@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>Seventhsq.com</title>
     <style>
+
+
         .container {
             max-width: 100%;
             padding: 0;
@@ -166,6 +168,9 @@
         .menu-col-2 {
             width: auto;
         }
+        /* signup page inpage code starts from here */
+        
+
     </style>
 </head>
 
@@ -449,7 +454,7 @@
             <div class="left__panel"></div>
             <div class="right__panel">
                 <div class="login__heading">
-                    <h3>Login to your Account</h3>
+                    <h3>Sign up as a Individual</h3>
                 </div>
                 <div class="Login__body ">
                     <div class="row">
@@ -458,8 +463,22 @@
                                 <div class="myform form ">
                                     <form action="" method="post" name="login">
                                         <div class="form-group contact_line">
-                                            <input type="email" type="number" name="email" class="form-control contact " id="email"
-                                                aria-describedby="emailHelp" placeholder="Contact / Email">
+                                            <input type="text" name="username" class="form-control contact " id="email"
+                                                aria-describedby="emailHelp" placeholder="Full Name">
+                                                
+                                        </div>
+                                        <div class="form-group contact_line phone">
+                                            <input type="number" name="contact" class="form-control phone_no" id="email"
+                                                placeholder="Contact">
+                                            <input type="submit" name="verify" class="form-control phone_verify " id="verify"
+                                                placeholder="verify" value="Verify" >
+                                            
+
+                                                
+                                        </div>
+                                        <div class="form-group contact_line">
+                                            <input type="email" name="email" class="form-control contact " id="email"
+                                                aria-describedby="emailHelp" placeholder="Email ( Optional )">
                                                 
                                         </div>
                                         <div class="form-group">
@@ -471,12 +490,12 @@
                                         <div class="button_line">
                                             <div class=" ">
                                                 <button type="submit"
-                                                    class=" button btn mybtn btn-primary tx-tfm ">Login</button>
+                                                    class=" button btn mybtn btn-primary tx-tfm ">SignUp</button>
                                             </div>
                                         </div>
                                         
                                         <div class="form-group Donthaveacc">
-                                            <a href="../login/signup.html" id="signup"><p class="text-center">New User ? Create Account
+                                            <a href="../login/signup.html" id="signup"><p class="text-center">Already a member ? Login In
                                             </a></p></a>
                                         </div>
                                     </form>

@@ -182,3 +182,141 @@ margin-top: 100px;
     color: #999;
     background-color: #444;
 }
+
+
+/* responsive design starts from here */
+
+@media (max-width: 920px){
+  .login__section {
+    height: auto;
+    font-family: Arial;
+  }
+  .main__block {
+top:20px;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .left__panel {
+      margin-top: 2px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(50, 168, 168);
+  }
+  .right__panel {
+      margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .right__panel .login__heading {
+    padding: 5px;
+    margin: 5px;
+  }
+  .right__panel .login__heading h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  /* 
+  login section */
+  
+  .myform { 
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: 100%;
+    display: block;
+    pointer-events: auto;
+    outline: 0;
+  }
+  .Main__box{
+      margin-left: 110px;
+  }
+  .contact, .password, .verify{
+      margin-top: 10px;
+      width: 380px;
+      border: none;
+      background-color: rgb(255, 255, 255);
+      color: #111; 
+      border-radius: none;
+      border-bottom: 2px solid #111 !important; 
+  }
+  .contact{
+      width: 380px;
+      height: 40px;
+      margin-bottom: 20px;
+      
+  }
+  .forgetblock{
+      margin-left: 250px;
+      padding-top: 10px;
+  }
+  .form-group a{
+      color: #999;
+  }
+  .form-group a:hover{
+      color: #111;
+      transition: color 1s;
+      
+  }
+  .tx-tfm {
+    text-transform: uppercase;
+    height: 40px;
+  }
+  .mybtn {
+    border-radius: 50px;
+  }
+  form .error {
+    color: #222;
+  }
+  .button_line{
+      display: flex;
+  flex-direction: column;
+  }
+  .button_line .button{
+      margin-left: 90px;
+      margin-top: 30px;
+      width: 180px;
+      border:1px solid #666;
+      border-radius: 5px;
+      background-color: #333;
+      color: #999;
+      padding: 0;
+  }
+  .button_line .forget_button{
+      margin-top: 0px;
+      width: 180px;
+      border:1px solid #666;
+      border-radius: 5px;
+      background-color: #333;
+      color: #999;
+      padding: 0;
+  }
+  .forget_button-line{
+      display: flex;
+  flex-direction: row;
+  }
+  .forget_button-line .help{
+      margin-left: 20px;
+  }
+  .Donthaveacc a{
+  color: grey;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

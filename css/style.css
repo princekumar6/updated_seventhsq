@@ -114,9 +114,6 @@ flex: .7;
     flex-direction: column;
 }
 
-.input__box input{
-    width: 600px;
-}
 .input__box{
     display:flex;
     flex-direction:row;
@@ -126,6 +123,7 @@ flex: .7;
 }
 .input__box input{
     border-radius: 5px 0 0 5px !important; 
+    width: 600px;
 }
 .log-sign{
     padding-top: 4px;
@@ -745,9 +743,13 @@ visibility: hidden;
 
         background-color: black;
         width: 100%;
-        height: 105px;
+        height: 80px;
         z-index: 1000;
     }
+.input__box input{
+    width: 300px;
+
+}
     #check{
         display: block;
     }
@@ -755,7 +757,7 @@ visibility: hidden;
     .nav-btn{
         position: fixed;
         height: calc(100vh - 3rem);
-        top: 3rem;
+        top: 1.5rem;
         left: 0;
         width: 100%;
         background-color: #69bde7;

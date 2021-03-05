@@ -95,32 +95,15 @@ form .error {
 .button_line{
     display: flex;
 flex-direction: column;
+align-items: center;
+padding: 20px;
 }
-.button_line .button{
-    margin-left: 90px;
-    margin-top: 30px;
-    width: 180px;
-    border:1px solid #666;
-    border-radius: 5px;
-    background-color: #333;
-    color: #999;
-    padding: 0;
-}
-.button_line .forget_button{
-    margin-top: 0px;
-    width: 180px;
-    border:1px solid #666;
-    border-radius: 5px;
-    background-color: #333;
-    color: #999;
-    padding: 0;
-}
-.forget_button-line{
-    display: flex;
-flex-direction: row;
-}
-.forget_button-line .help{
-    margin-left: 20px;
+
+.button_line input{
+  border-radius: 5px;
+  background-color: #222;
+  color:#999;
+padding:10px 25px;
 }
 .Donthaveacc a{
 color: grey;

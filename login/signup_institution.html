@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>Seventhsq.com</title>
     <style>
-
-
         .container {
             max-width: 100%;
             padding: 0;
@@ -168,9 +166,8 @@
         .menu-col-2 {
             width: auto;
         }
-        /* signup page inpage code starts from here */
-        
 
+        /* signup page inpage code starts from here */
     </style>
 </head>
 
@@ -454,52 +451,48 @@
             <div class="left__panel"></div>
             <div class="right__panel">
                 <div class="login__heading">
-                    <h3>Signup as as Institution</h3>
+                    <h3>Sign up as Institute</h3>
                 </div>
                 <div class="Login__body ">
                     <div class="row">
                         <div class=" Main__box">
                             <div id="first">
                                 <div class="myform form ">
-                                    <form action="" method="post" name="login">
+                                    <form action="#" onsubmit="return validate()">
                                         <div class="form-group contact_line">
-                                            <input type="text" name="username" class="form-control contact " id="email"
-                                                aria-describedby="emailHelp" placeholder="Receipent Name">
-                                                
+                                            <input type="text" name="username" class="form-control contact "
+                                                placeholder="Reciepent Name" id="rname">
                                         </div>
                                         <div class="form-group contact_line">
-                                            <input type="text" name="username" class="form-control contact " id="email"
-                                                aria-describedby="emailHelp" placeholder="Company Name">
-                                                
+                                            <input type="text" name="company" class="form-control contact "
+                                                placeholder="Company" id="company">
                                         </div>
                                         <div class="form-group contact_line phone">
-                                            <input type="number" name="contact" class="form-control phone_no" id="email"
-                                                placeholder="Contact">
-                                            <input type="submit" name="verify" class="form-control phone_verify " id="verify"
-                                                placeholder="verify" value="Verify" >
-                                            
-
-                                                
+                                            <input type="number" id="contact" name="contact"
+                                                class="form-control phone_no" id="email" placeholder="Contact">
+                                            <input type="submit" name="verify" class="form-control phone_verify "
+                                                id="verify" placeholder="verify" value="Verify">
                                         </div>
                                         <div class="form-group contact_line">
-                                            <input type="email" name="email" class="form-control contact " id="email"
-                                                aria-describedby="emailHelp" placeholder="Email (Optional)">
-                                                
+                                            <input type="email" id="email" name="email" class="form-control contact "
+                                                aria-describedby="emailHelp" placeholder="Email ( Optional )">
+
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="password form-control"
-                                                aria-describedby="emailHelp" placeholder="Password">
-                                                
+                                            <input type="password" id="password" name="password"
+                                                class="password form-control" aria-describedby="emailHelp"
+                                                placeholder="Password">
+
                                         </div>
                                         <div class="button_line">
                                             <div class=" ">
-                                                <button type="submit"
-                                                    class=" button btn mybtn btn-primary tx-tfm ">SignUp</button>
+                                                <input name="submit" type="submit" value="signup">
                                             </div>
                                         </div>
-                                        
+
                                         <div class="form-group Donthaveacc">
-                                            <a href="../login/signup.html" id="signup"><p class="text-center">Already a member ? Login In
+                                            <a href="../login/signup.html" id="signup">
+                                                <p class="text-center">Already a member ? Login In
                                             </a></p></a>
                                         </div>
                                     </form>
@@ -594,6 +587,70 @@
     </div>
 
     </main>
+    <script type="text/javascript">
+        function validate() {
+            var rname = document.getElementById('rname').value;
+            var company = document.getElementById('company').value;
+            var contact = document.getElementById('contact').value;
+            var verify = document.getElementById('verify').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            // Receipent name validation
+            if (rname == "") {
+
+                alert("Please Enter Your Receipent name");
+                return false;
+            }
+            if (!isNaN(user)) {
+                alert("Receipent name doesnt  contain digits");
+                return false;
+            }
+            // company name validation
+            if (company == "") {
+
+                alert("Please Enter the name of your company");
+                return false;
+            }
+            // contact validation
+            if (contact == "") {
+                alert("Please Enter Your phone Number");
+                return false;
+            }
+            if (isNaN(contact)) {
+                alert("Please Enter Digits only");
+                return false;
+            }
+            if (contact.length != 10) {
+                alert("Mobile number shouldn't greater then 10 digits.");
+                return false;
+            }
+            // password validation
+            if (password == "") {
+                alert("Please Enter Your Password");
+                return false;
+            }
+            if ((pass.length <= 8) || (pass.length > 20)) {
+                alert("Password Lies between 8 to 20 Characters");
+                return false;
+            }
+            if (email == "") {
+                alert("Please Enter Your Email");
+                return false;
+            }
+            if (email.indexOf('@') <= 0) {
+                alert("Invalid email address");
+                return false;
+            }
+            if ((email.charAt(email.length - 4) != '.') && (email.charAt(email.length - 3) != '.')) {
+                alert("Invalid Email address")
+            }
+            if ((emails.charAt(emails.length - 4) != '.') && (emails.charAt(emails.length - 3) != '.')) {
+                document.getElementById('emailids').innerHTML = " ** . Invalid Position";
+                return false;
+            }
+
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 </body>

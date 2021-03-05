@@ -461,14 +461,13 @@
                         <div class=" Main__box">
                             <div id="first">
                                 <div class="myform form ">
-                                    <form action="" method="post" name="login">
+                                    <form action="#" onsubmit="return validation()">
                                         <div class="form-group contact_line">
-                                            <input type="text" name="username" class="form-control contact " id="email"
-                                                aria-describedby="emailHelp" placeholder="Full Name">
-                                                
+                                            <input type="text" name="username" class="form-control contact "
+                                                 placeholder="Full Name" id="fname">    
                                         </div>
                                         <div class="form-group contact_line phone">
-                                            <input type="number" name="contact" class="form-control phone_no" id="email"
+                                            <input type="number" id="contact" name="contact" class="form-control phone_no" id="email"
                                                 placeholder="Contact">
                                             <input type="submit" name="verify" class="form-control phone_verify " id="verify"
                                                 placeholder="verify" value="Verify" >
@@ -477,19 +476,18 @@
                                                 
                                         </div>
                                         <div class="form-group contact_line">
-                                            <input type="email" name="email" class="form-control contact " id="email"
+                                            <input type="email" id="email" name="email" class="form-control contact "
                                                 aria-describedby="emailHelp" placeholder="Email ( Optional )">
                                                 
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="password form-control"
+                                            <input type="password" id="password" name="password" class="password form-control"
                                                 aria-describedby="emailHelp" placeholder="Password">
                                                 
                                         </div>
                                         <div class="button_line">
                                             <div class=" ">
-                                                <button type="submit"
-                                                    class=" button btn mybtn btn-primary tx-tfm ">SignUp</button>
+                                                <input name="submit" type="submit" value="signup">
                                             </div>
                                         </div>
                                         
@@ -589,6 +587,7 @@
     </div>
 
     </main>
+    <script src="../js/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 </body>

@@ -1,4 +1,52 @@
-
+.single-product {
+  margin-top: 80px;
+}
+.single-product .col-2 img {
+  padding: 0;
+}
+.single-product .col-2 {
+  padding: 20px;
+}
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #ff4311;
+}
+.single-product input:focus {
+  outline: none;
+}
+.single-product .fa {
+  color: #5e4c4e;
+  padding-left: 10px;
+}
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.pagination input {
+  width: 20px !important;
+}
+.title{
+    color: #888 !important; 
+    font-weight: 800;
+}
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
 * {
   margin: 0;
@@ -39,9 +87,6 @@ h2 {
   font-size: 1.4rem;
   text-transform: capitalize;
   font-weight: 500;
-}
-.page-link{
-    width: 50px !important;
 }
 .card-title p {
   font-size: 0.9rem;

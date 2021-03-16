@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/ce664af958.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <!-- nav bar starts from here -->
+    <header>
+        <div class="upper-pannel">
+            <div class="help"><i class="fas fa-question"> </i><span> Help</span></div>
+            <div class="r_y_o"><i class="fas fa-book-open"> </i><span> Request your Quote</span></div>
+            <div class="t_y_o"><i class="fas fa-truck-moving"> </i><span> Track your Order</span></div>
+
+        </div>
+        <div class="main-container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="input__box" style="--i: .85s">
+                            <input type="text" class="form-control" placeholder="Search Your Product"
+                                aria-label="Search Your Product" aria-describedby="button-addon2"><i
+                                class="fas fa-search"></i>
+                        </li>
+                        <li class="log-sign location" style="--i: .85s">
+                            <span><select class="custom-select">
+                                    <option selected>Select City </option>
+                                    <option value="1">Jaipur</option>
+                                    <option value="2">Nvi Mumbai</option>
+                                    <option value="3">Delhi</option>
+                                </select></span>
+                        </li>
+                        <li class="log-sign" style="--i: .85s">
+                            <a href="../ProductFile/cart.html"><i class="fas fa-shopping-cart"></i></a><span>Cart</span>
+                        </li>
+                        <li class="log-sign" style="--i: .85s">
+                            <a href="../login/index.html"><i class="fas fa-user"></i></a> <span>Login/Register</span>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="container">
+                        <ul class="menu-main">
+                            <li class="header_li"><a href="">Building Materials</a>
+                                <div class="menu-sub building">
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Bricks</h4>
+                                        <ul>
+                                            <li><a href="">AAC Blocks</a></li>
+                                            <li><a href="">Red Clay Bricks</a></li>
+                                        </ul>
+                                        <h4 class="menu-category">TMT Steel</h4>
+                                        <ul>
+                                            <li><a href="">Fe415</a></li>
+                                            <li><a href="">Fe500</a></li>
+                                            <li><a href="">Fe550</a></li>
+                                            <li><a href="">Fe600</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Structural Steel</h4>
+                                        <ul>
+                                            <li><a href="">MS Pipe</a></li>
+                                            <li><a href="">MS Angle</a></li>
+                                            <li><a href="">MS Beam</a></li>
+                                            <li><a href="">MS Channel</a></li>
+                                            <li><a href="">HR Sheet</a></li>
+                                            <li><a href="">HR coil</a></li>
+                                            <li><a href="">SS Coil</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Aggregates</h4>
+                                        <ul>
+                                            <li><a href="">Coarse</a></li>
+                                            <li><a href="">Fine</a></li>
+                                        </ul>
+
+                                        <h4 class="menu-category">Construction Pipes</h4>
+                                        <ul>
+                                            <li><a href="">Cast Iron</a></li>
+                                            <li><a href="">GI</a></li>
+                                            <li><a href="">Plastic- UPVC, PVC, CPVC</a></li>
+                                            <li><a href="">Fitting & Accessories</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Natural Stones</h4>
+                                        <ul>
+                                            <li><a href="">Granite</a></li>
+                                            <li><a href="">Marble</a></li>
+                                            <li><a href="">Sandstone</a></li>
+                                            <li><a href="">Limestone</a></li>
+                                            <li><a href="">Slate</a></li>
+                                            <li><a href="">Quartz</a></li>
+                                            <li><a href="">Laterite</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">More</h4>
+                                        <ul>
+                                            <li><a href="">Cement</a></li>
+                                            <li><a href="">Sand</a></li>
+                                            <li><a href="">Ready Mix Concrete</a></li>
+                                            <li><a href="">Gravel</a></li>
+                                            <li><a href="">AAC Block Adhesive</a></li>
+                                            <li><a href="">Shuttering PLY</a></li>
+                                            <li><a href="">Architectural Glass/ Stones</a></li>
+                                            <li><a href="">Timber/ Wood</a></li>
+                                            <li><a href="">Plywood</a></li>
+                                            <li><a href="">Paint & Finishes</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_li"><a href="">HVAC</a>
+                                <div class="menu-sub hvac">
+                                    <div class="menu-col-2">
+                                        <h4 class="menu-category">Products</h4>
+                                        <ul>
+                                            <li><a href="">Exhaust Fans</a></li>
+                                            <li><a href="">Switchgears</a></li>
+                                            <li><a href="">Wires & Cables</a></li>
+                                            <li><a href="">Distribution Boards</a></li>
+                                            <li><a href="">Air Conditioner</a></li>
+                                            <li><a href="">Fans</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_li"><a href="">Sanitaryware</a>
+                                <div class="menu-sub sanitaryware">
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Products</h4>
+                                        <ul>
+                                            <li><a href="">Faucets</a></li>
+                                            <li><a href="">Urinals</a></li>
+                                            <li><a href="">Wash Basins</a></li>
+                                            <li><a href="">Water Closet</a></li>
+                                            <li><a href="">Shower & Bath</a></li>
+                                            <li><a href="">Cisterns</a></li>
+                                            <li><a href="">Water Heaters</a></li>
+                                            <li><a href="">Kitchen Sinks</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Accessories</h4>
+                                        <ul>
+                                            <li><a href="">Mirriors</a></li>
+                                            <li><a href="">Holders</a></li>
+                                            <li><a href="">Racks & Hooks</a></li>
+                                            <li><a href="">Shelf</a></li>
+                                            <li><a href="">Ring</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_li"><a href="">Flooring & wall</a>
+                                <div class="menu-sub flooring">
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Products</h4>
+                                        <ul>
+                                            <li><a href="">Hardwood</a></li>
+                                            <li><a href="">Marble</a></li>
+                                            <li><a href="">Tiles</a></li>
+                                            <li><a href="">Vinyl</a></li>
+                                            <li><a href="">Granite</a></li>
+                                            <li><a href="">Bamboo</a></li>
+                                            <li><a href="">Laminate</a></li>
+                                            <li><a href="">Linoleum</a></li>
+                                            <li><a href="">Terrazzo/ Mosaic</a></li>
+                                            <li><a href="">Brick</a></li>
+                                            <li><a href="">Quartz</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Oxide</h4>
+                                        <ul>
+                                            <li><a href="">Oxide Powder</a></li>
+                                            <li><a href="">Marble Powder/ Lime</a></li>
+                                        </ul>
+                                        <h4 class="menu-category">Flooring Accessories</h4>
+                                        <ul>
+                                            <li><a href="">Wall Base</a></li>
+                                            <li><a href="">Maoulding</a></li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="header_li"><a href="">Construction Chemicals</a>
+                                <div class="menu-sub construction-chemicals">
+                                    <div class="menu-col-2">
+                                        <h4 class="menu-category">Products</h4>
+                                        <ul>
+                                            <li><a href="">Water Proofing</a></li>
+                                            <li><a href="">Construction Adhesive</a></li>
+                                            <li><a href="">Shuttering Oil</a></li>
+                                            <li><a href="">Concrete Admixture</a></li>
+                                            <li><a href="">Grauting Material</a></li>
+                                            <li><a href="">Sealant</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_li"><a href="">Sustainable</a>
+                            </li>
+                            <li class="header_li"><a href="">Discover</a>
+                            </li>
+                            <li class="header_li"><a href="">More</a>
+                                <div class="menu-sub more">
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Hardware and Railing</h4>
+                                        <ul>
+                                            <li><a href="">Glass Hardware</a></li>
+                                            <li><a href="">Handles and Knobs</a></li>
+                                            <li><a href="">Floor Hings</a></li>
+                                            <li><a href="">Door Closers</a></li>
+                                            <li><a href="">Latches</a></li>
+                                            <li><a href="">Deadbolt</a></li>
+                                            <li><a href="">Smoke Detectors</a></li>
+                                            <li><a href="">Security Systems</a></li>
+                                            <li><a href="">Plumbing Hardware</a></li>
+                                            <li><a href="">Curtain Rings & Rods</a></li>
+                                            <li><a href="">Railing Systems</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Doors and Windows</h4>
+                                        <ul>
+                                            <li><a href="">UPVC</a></li>
+                                            <li><a href="">Wooden</a></li>
+                                            <li><a href="">Aluminium</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col-1">
+                                        <h4 class="menu-category">Modular</h4>
+                                        <ul>
+                                            <li><a href="">Kitchen</a></li>
+                                            <li><a href="">Bath</a></li>
+                                            <li><a href="">Wardrobe</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- navbar ends here -->
+    <!-- main body starts from here -->
+    <div class="dashboard__body">
+        <div class="dashboard__bodyLeft">
+            <div class="dashboard__bodyLeft-lower">
+
+                <ul>
+                    <img class="image" src="../img/man.png" alt="">
+                    <p class="username">Username</p>
+                    <li class="nav__link"><a href=""><i class="fas fa-tachometer-alt"></i> &nbsp;&nbsp; Dashboard</a>
+                    </li>
+                    <li class="nav__link"><a href=""><i class="fas fa-calendar-week"></i> &nbsp;&nbsp; Calender</a></li>
+                    <li class="nav__link"><a href=""><i class="fas fa-envelope-open-text"></i> &nbsp;&nbsp; E-mail</a>
+                    </li>
+                    <li class="nav__link"><a href=""><i class="fas fa-table"></i> &nbsp;&nbsp; Tables</a></li>
+                    <li class="nav__link"><a href=""><i class="fas fa-icons"></i> &nbsp;&nbsp; Icon-set</a></li>
+                    <li class="nav__link"><a href=""><i class="fas fa-user-alt"></i> &nbsp;&nbsp; Profile </a></li>
+                    <li class="nav__link"><a href=""><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Maps </a></li>
+                    <li class="nav__link"><a href=""><i class="fab fa-glide-g"></i> &nbsp;&nbsp; Guideline</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard__bodyRight">
+            <div class="dashboard__bodyRight-lower">
+                <div class="bodyRight__lower-1">
+                    <p><a href="">Home</a> / Dashboard</p>
+<h3>Dashboard</h3>
+                </div>
+                <div class="bodyRight__lower-2">
+                    <div class="lower2__first">
+                        <p class="first__title">Arrival</p>
+                        <h1 class="first__heading">93</h1>
+                        <p class="first__paraOne"><small class="paraOne__left">60</small> <small
+                                class="paraOne__right">33</small></p>
+                        <hr class="first__progrssBar">
+                        <p class="first__paraOne"><small class="paraOne__left1">Approved</small><small
+                                class="paraOne__right1">Waiting</small></p>
+                    </div>
+                    <div class="lower2__second">
+                        <p class="first__title">Departure</p>
+                        <h1 class="first__heading">10</h1>
+                        <p class="first__paraOne"><small class="paraOne__left">60</small> <small
+                                class="paraOne__right">33</small></p>
+                        <hr class="first__progrssBar">
+                        <p class="first__paraOne"><small class="paraOne__left1">Approved</small><small
+                                class="paraOne__right1">Waiting</small></p>
+                    </div>
+                    <div class="lower2__third">
+                        <p class="first__title">Services <span>Total : 99 Lakh</span></p>
+                        <h1 class="first__heading">1450</h1>
+                        <div class="first__paraOne"><small class="paraOne__left">60</small> <small
+                                class="paraOne__right">33</small></div>
+                        <hr class="first__progrssBar">
+                        <p class="first__paraOne"><small class="paraOne__left1">Approved</small><small
+                                class="paraOne__right1">WaitingApproval</small></p>
+                    </div>
+                    <div class="lower2__fourth">
+                        <p class="first__title">Reservations <span><i class="fas fa-chart-bar"></i></span></p>
+                        <h1 class="first__heading">20</h1>
+                        <p class="first__paraOne"><small class="paraOne__left">60</small> <small
+                                class="paraOne__right">33</small></p>
+                        <hr class="first__progrssBar">
+                        <p class="first__paraOne"><small class="paraOne__left1">Approved</small><small
+                                class="paraOne__right1">Waiting Approval</small></p>
+                    </div>
+                </div>
+                <div class="bodyRight__lower-3">
+                    <div class="lower3__first">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Bar Chart <span>Week <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+                        <div class="lower3__first-body">
+
+                        </div>
+
+                    </div>
+                    <div class="lower3__second">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Simple Chart <span>Year <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bodyRight__lower-4">
+                    <div class="lower4__first">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Activity User Chart <span>Week <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bodyRight__lower-5">
+                    <div class="lower5__first">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Current Program <span>Week <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lower5__second">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Top Sales <span>Week <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lower5__third">
+                        <div class="lower3__first-header">
+                            <p class="first__header"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                                &nbsp; Latest Activity <span>Week <i class="fas fa-cog"></i> </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

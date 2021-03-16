@@ -1,0 +1,147 @@
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+nav {
+    padding-left: 0px;
+    background-color: transparent;
+    margin-bottom: 30px !important;
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+    height: 30px;
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    padding: .75em .75em;
+    font-weight: 400;
+}
+
+.header_li a :hover {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    color: #444;
+}
+
+nav li:hover a {
+    color: Black;
+    font-weight: 500;
+}
+
+
+.menu-sub {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    border-radius: 0 0 1px 1px;
+    background-color: whitesmoke;
+    width: auto;
+    display: none;
+    color: rgb(43, 41, 41);
+    padding: .5em;
+}
+.building{
+width: 100%;
+}
+.construction-chemicals {
+    position: absolute;
+    top: 33px;
+    left: 500px;
+    border-radius: 0 0 1px 1px;
+    background-color: whitesmoke;
+    width: auto;
+    display: none;
+    color: rgb(43, 41, 41);
+    padding: .5em;
+}
+
+.more {
+    position: absolute;
+    top: 33px;
+    left: 400px;
+    border-radius: 0 0 1px 1px;
+    background-color: whitesmoke;
+    width: 100%;
+    display: none;
+    color: rgb(43, 41, 41);
+    padding: .5em;
+}
+.hvac{
+    left: 100px;
+    width: 300px;
+}
+.sanitaryware{
+    left: 200px;
+}
+.flooring{
+left: 350px;
+}
+.menu-sub h4 {
+    font-size: 17px;
+    color: lightcoral;
+}
+
+nav li:hover .menu-sub {
+    display: block;
+}
+
+.menu-sub li {
+    display: block;
+    font-weight: 500;
+    color: #555;
+}
+
+.menu-sub a {
+    padding: 0;
+    margin-bottom: .35em;
+    color: black;
+}
+
+.menu-sub a:hover {
+    text-decoration: underline;
+}
+
+.menu-category {
+    margin: .5em 0 .5em;
+}
+
+.menu-category:first-of-type {
+    margin-top: 0;
+}
+
+.menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4 {
+    padding-left: 1.5em;
+    float: left;
+
+}
+
+.menu-sub .menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4 ul li a {
+    color: #555 !important;
+}
+
+.menu-col-1 {
+    width: auto;
+}
+
+.menu-col-2 {
+    width: auto;
+}

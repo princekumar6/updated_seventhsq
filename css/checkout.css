@@ -1,0 +1,40 @@
+.container {
+  max-width: 960px;
+}
+main{
+    padding: 5%  !important;
+    background-color: rgb(230, 231, 233);
+}
+.redeem__input input{
+    margin-top: 8%  !important;
+    height: 40px !important;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.order-md-last{
+    margin: 0% !important;
+    padding: 0% !important;
+}
+.billing__heading{
+    margin-bottom: 5% !important;
+    text-align: center  !important;
+    font-size: 45px;
+}
+.cart__heading{
+    font-size: 35px;
+    margin: 0% !important;
+    padding: 0% !important;
+}
+.col-md-6 input{
+ align-items: center;
+}
+.btn{
+    border-radius: 5px !important;
+    background-color: black !important;
+    color: #999!important;
+}

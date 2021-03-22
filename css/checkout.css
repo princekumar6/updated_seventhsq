@@ -21,7 +21,7 @@ main {
 .left {
   margin: 10px 60px;
   display: grid;
-  grid-template-rows: 50px 340px 100px 440px;
+  grid-template-rows: 50px 340px 100px auto;
   grid-column: 1 / span 5;
 }
 .zip {
@@ -52,6 +52,8 @@ main {
 }
 .left__item2 .address__map button{
 margin-left: 20%;
+background-color:black;
+color: #999;
 }
 .left__item2 address p {
   margin: 0;
@@ -82,13 +84,19 @@ margin-left: 20%;
   padding: 5px 5px;
   border: none;
   border-radius: 0px;
+  background-color: black;
+  color: #999;
 }
 .left__item2 .form-row {
   display: flex;
   margin: 1px auto;
 }
+.left__item2 .form-row button{
+  justify-content: flex-start;
+}
 .left__item3 {
   margin-top: 50px;
+  background-color: rgb(240, 239, 239);
 }
 .left__item3 h1 {
   font-size: 20px;
@@ -97,6 +105,9 @@ margin-left: 20%;
 }
 .left__item4 .card{
   margin: 20px !important;
+}
+.left__item3 .accordion{
+  background-color: white;
 }
 .left__item4 .card-header{
   margin: 0px !important;
@@ -114,12 +125,41 @@ margin-left: 20%;
   text-decoration: none;
   margin-left: 10px;
 }
+/* colapse starts from  here */
+.card-body{
+margin: 10px auto;
+padding: 0;
+}
+.card-body h4{
+  padding: 10px;
+  font-size:20px;
+  font-weight: 400;
+}
+.card-body .row{
+  margin: 0;
+  padding: 0;
+}
+.card-body .btn{
+  background-color:black;
+  color: #999;
+  border-radius: 0px;
+  margin-right: 20px;
+}
+.card-body .bank__images input{
+  margin-top: 10px;
+}
+.card-body .row select{
+  padding: 10px;
+}
+.card-body .row select:focus{
+  outline: none;
+}
 .right {
   margin-left: -80px;
   margin-top: 10px;
   margin-right: 40px;
   display: grid;
-  grid-template-rows: 50px 320px 200px;
+  grid-template-rows: 50px 450px;
 }
 .right__item1 h1 {
   padding: 10px;
@@ -130,6 +170,7 @@ margin-left: 20%;
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding-top: 10px;
 }
 .right__item2 .products {
   display: flex;
@@ -167,9 +208,28 @@ margin-left: 20%;
 .product__info input:focus {
   outline: none;
 }
-.right__item3 {
-  background-color: rgba(111, 43, 138, 0.288);
+.subtotal .subtotal__heading{
+  padding: 10px;
+  height: 50px;
+  background-color: rgb(236, 236, 236);
 }
+.subtotal p{
+  font-size: 14px;
+  padding: 10px;
+}
+.subtotal p span{
+  float: right;
+}
+.subtotal h5{
+   padding: 0px  10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subtotal h5 span{
+  float: right;
+}
+
 @media only screen and (max-width: 920px) {
   main {
     display: flex;

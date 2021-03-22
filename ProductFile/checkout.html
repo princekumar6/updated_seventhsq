@@ -354,7 +354,7 @@
         </div>
         <!-- --------------------------------------------------------??? -->
         <div class="form-row">
-          <button type="submit" class="btn btn-dark">Continue to this Address</button>
+          <button type="submit" class="btn btn-dark">Continue </button>
           <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
             Add Another Address
           </button>
@@ -363,14 +363,14 @@
       <div class="left__item3 shadow">
         <h1>Payment Details</h1>
       </div>
-      <div class="left__item4 shadow">
-        <div class="accordion" id="accordionExample">
+      <div class="left__item4 bg-white shadow">
+        <div class="accordion bg-white" id="accordionExample">
           <div class="card shadow-sm">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Debit / Credit Card Payment
+                  Debit / Card Card
                 </button>
               </h2>
             </div>
@@ -381,8 +381,6 @@
                   <div class="row">
                     <div class="form-group col-md-5">
                       <input type="number" class="form-control" id="card__number" placeholder="Card Number">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your Account number with
-                        anyone else.</small>
                     </div>
                     <div class="form-group col-md-5">
                       <input type="text" class="form-control" id="card__name" placeholder="Account Holder's Name">
@@ -406,15 +404,15 @@
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                   aria-expanded="false" aria-controls="collapseTwo">
-                  Pay thorough Net Banking
+                  Net Banking
                 </button>
               </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
+              <div class="card-body bank__images">
                 <h4>Popular Banks</h4>
                 <form>
-                  <div class="row">
+                  <div class="row ">
                     <div class="form-group col-md-2">
                       <input type="radio" aria-label="Radio button for following text input">
                       <img src="../img/sbi.png" alt="" width="50px" height="20px">
@@ -459,7 +457,7 @@
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                   aria-expanded="false" aria-controls="collapseThree">
-                  Pay Through UPI G-Pay / PhonePay / Paytm
+                  UPI
                 </button>
               </h2>
             </div>
@@ -469,7 +467,7 @@
                   <div class="row">
                     <div class="form-group col-md-5">
                       <input type="number" class="form-control" id="upi__number" placeholder="UPI ID">
-                      <small id="emailHelp" class="form-text text-muted">Please Enter Your UPI Number above.</small>
+                      
                     </div>
                     <button type="submit" class="btn btn-primary col-md-3">Make Payment</button>
                   </div>
@@ -482,7 +480,7 @@
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
                   aria-expanded="false" aria-controls="collapseFour">
-                  Pay Through Wallet
+                  Pay on delivery
                 </button>
               </h2>
             </div>
@@ -490,12 +488,7 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="form-group col-md-5">
-                      <input type="radio" aria-label="Radio button for following text input"> <img
-                        src="../img/paytm.png" alt="" width="70px" height="50px">
-                      <small id="emailHelp" class="form-text text-muted">Paytm Balance : 2398 Rs. </small>
-                    </div>
-                    <button type="submit" class="btn btn-primary col-md-3">Pay through Wallet</button>
+                    <button type="submit" class="btn col-md-3">Place Order</button>
                   </div>
                 </form>
               </div>
@@ -533,11 +526,18 @@
             <p class="heading"><b>Steel rod (5*1000 cm)</b></p>
             <input type="number" placeholder="00">
             <p>2999 <span>INR</span></p>
-
           </div>
         </div>
+        <div class="subtotal">
+          <div class="subtotal__heading shadow-sm">
+            Total Amount
+          </div>
+          <p>Subtotal <span>9999 INR</span></p>
+          <p>GST <span>18% (included)</span></p>
+          <hr>
+          <h5>Total Amount <span>XXXXXXX</span></h5>
+        </div>
       </div>
-      <div class="right__item3">subtotal</div>
     </div>
   </main>
   <footer>

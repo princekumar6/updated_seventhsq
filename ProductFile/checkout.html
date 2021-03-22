@@ -1,514 +1,614 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <title>Product Checkout Page</title>
-    <link rel="stylesheet" href="../css/checkout.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-  </head>
-  <body>
-    <header>
-        <div class="upper-pannel">
-            <div class="help"><i class="fas fa-question"> </i><span> Help</span></div>
-            <div class="r_y_o"><i class="fas fa-book-open"> </i><span> Request your Quote</span></div>
-            <div class="t_y_o"><i class="fas fa-truck-moving"> </i><span> Track your Order</span></div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <title>Product - Checkout </title>
+</head>
 
+<body>
+  <header>
+    <div class="upper-pannel">
+      <div class="help"><i class="fas fa-question"> </i><span> Help</span></div>
+      <div class="r_y_o"><i class="fas fa-book-open"> </i><span> Request your Quote</span></div>
+      <div class="t_y_o"><i class="fas fa-truck-moving"> </i><span> Track your Order</span></div>
+
+    </div>
+    <div class="main-container">
+      <input type="checkbox" name="" id="check">
+      <div class="logo-container">
+        <img src="../img/logo.png" alt="">
+      </div>
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="input__box" style="--i: .85s">
+              <input type="text" class="form-control" placeholder="Search Your Product" aria-label="Search Your Product"
+                aria-describedby="button-addon2"><i class="fas fa-search"></i>
+            </li>
+            <li class="log-sign location" style="--i: .85s">
+              <span><select class="custom-select">
+                  <option selected>Select City </option>
+                  <option value="1">Jaipur</option>
+                  <option value="2">Nvi Mumbai</option>
+                  <option value="3">Delhi</option>
+                </select></span>
+            </li>
+            <li class="log-sign" style="--i: .85s">
+              <a href="ProductFile/cart.html"><i class="fas fa-shopping-cart"></i></a><span>Cart</span>
+            </li>
+            <li class="log-sign" style="--i: .85s">
+              <a href="login/index.html"><i class="fas fa-user"></i></a> <span>Login/Register</span>
+            </li>
+          </ul>
         </div>
-        <div class="main-container">
-            <input type="checkbox" name="" id="check">
-            <div class="logo-container">
-                <img src="../img/logo.png" alt="">
-            </div>
-            <div class="nav-btn">
-                <div class="nav-links">
+        <nav>
+          <div class="container">
+            <ul class="menu-main">
+              <li class="header_li"><a href="">Building Materials</a>
+                <div class="menu-sub building">
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Bricks</h4>
                     <ul>
-                        <li class="input__box" style="--i: .85s">
-                            <input type="text" class="form-control" placeholder="Search Your Product"
-                                aria-label="Search Your Product" aria-describedby="button-addon2"><i
-                                class="fas fa-search"></i>
-                        </li>
-                        <li class="log-sign location" style="--i: .85s">
-                            <span><select class="custom-select">
-                                    <option selected>Select City </option>
-                                    <option value="1">Jaipur</option>
-                                    <option value="2">Nvi Mumbai</option>
-                                    <option value="3">Delhi</option>
-                                </select></span>
-                        </li>
-                        <li class="log-sign" style="--i: .85s">
-                            <a href="../ProductFile/cart.html"><i class="fas fa-shopping-cart"></i></a><span>Cart</span>
-                        </li>
-                        <li class="log-sign" style="--i: .85s">
-                            <a href="../login/index.html"><i class="fas fa-user"></i></a> <span>Login/Register</span>
-                        </li>
+                      <li><a href="">AAC Blocks</a></li>
+                      <li><a href="">Red Clay Bricks</a></li>
                     </ul>
-                </div>
-                <nav>
-                    <div class="container">
-                        <ul class="menu-main">
-                            <li class="header_li"><a href="">Building Materials</a>
-                                <div class="menu-sub building">
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Bricks</h4>
-                                        <ul>
-                                            <li><a href="">AAC Blocks</a></li>
-                                            <li><a href="">Red Clay Bricks</a></li>
-                                        </ul>
-                                        <h4 class="menu-category">TMT Steel</h4>
-                                        <ul>
-                                            <li><a href="">Fe415</a></li>
-                                            <li><a href="">Fe500</a></li>
-                                            <li><a href="">Fe550</a></li>
-                                            <li><a href="">Fe600</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Structural Steel</h4>
-                                        <ul>
-                                            <li><a href="">MS Pipe</a></li>
-                                            <li><a href="">MS Angle</a></li>
-                                            <li><a href="">MS Beam</a></li>
-                                            <li><a href="">MS Channel</a></li>
-                                            <li><a href="">HR Sheet</a></li>
-                                            <li><a href="">HR coil</a></li>
-                                            <li><a href="">SS Coil</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Aggregates</h4>
-                                        <ul>
-                                            <li><a href="">Coarse</a></li>
-                                            <li><a href="">Fine</a></li>
-                                        </ul>
-
-                                        <h4 class="menu-category">Construction Pipes</h4>
-                                        <ul>
-                                            <li><a href="">Cast Iron</a></li>
-                                            <li><a href="">GI</a></li>
-                                            <li><a href="">Plastic- UPVC, PVC, CPVC</a></li>
-                                            <li><a href="">Fitting & Accessories</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Natural Stones</h4>
-                                        <ul>
-                                            <li><a href="">Granite</a></li>
-                                            <li><a href="">Marble</a></li>
-                                            <li><a href="">Sandstone</a></li>
-                                            <li><a href="">Limestone</a></li>
-                                            <li><a href="">Slate</a></li>
-                                            <li><a href="">Quartz</a></li>
-                                            <li><a href="">Laterite</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">More</h4>
-                                        <ul>
-                                            <li><a href="">Cement</a></li>
-                                            <li><a href="">Sand</a></li>
-                                            <li><a href="">Ready Mix Concrete</a></li>
-                                            <li><a href="">Gravel</a></li>
-                                            <li><a href="">AAC Block Adhesive</a></li>
-                                            <li><a href="">Shuttering PLY</a></li>
-                                            <li><a href="">Architectural Glass/ Stones</a></li>
-                                            <li><a href="">Timber/ Wood</a></li>
-                                            <li><a href="">Plywood</a></li>
-                                            <li><a href="">Paint & Finishes</a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="header_li"><a href="">HVAC</a>
-                                <div class="menu-sub hvac">
-                                    <div class="menu-col-2">
-                                        <h4 class="menu-category">Products</h4>
-                                        <ul>
-                                            <li><a href="">Exhaust Fans</a></li>
-                                            <li><a href="">Switchgears</a></li>
-                                            <li><a href="">Wires & Cables</a></li>
-                                            <li><a href="">Distribution Boards</a></li>
-                                            <li><a href="">Air Conditioner</a></li>
-                                            <li><a href="">Fans</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="header_li"><a href="">Sanitaryware</a>
-                                <div class="menu-sub sanitaryware">
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Products</h4>
-                                        <ul>
-                                            <li><a href="">Faucets</a></li>
-                                            <li><a href="">Urinals</a></li>
-                                            <li><a href="">Wash Basins</a></li>
-                                            <li><a href="">Water Closet</a></li>
-                                            <li><a href="">Shower & Bath</a></li>
-                                            <li><a href="">Cisterns</a></li>
-                                            <li><a href="">Water Heaters</a></li>
-                                            <li><a href="">Kitchen Sinks</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Accessories</h4>
-                                        <ul>
-                                            <li><a href="">Mirriors</a></li>
-                                            <li><a href="">Holders</a></li>
-                                            <li><a href="">Racks & Hooks</a></li>
-                                            <li><a href="">Shelf</a></li>
-                                            <li><a href="">Ring</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="header_li"><a href="">Flooring & wall</a>
-                                <div class="menu-sub flooring">
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Products</h4>
-                                        <ul>
-                                            <li><a href="">Hardwood</a></li>
-                                            <li><a href="">Marble</a></li>
-                                            <li><a href="">Tiles</a></li>
-                                            <li><a href="">Vinyl</a></li>
-                                            <li><a href="">Granite</a></li>
-                                            <li><a href="">Bamboo</a></li>
-                                            <li><a href="">Laminate</a></li>
-                                            <li><a href="">Linoleum</a></li>
-                                            <li><a href="">Terrazzo/ Mosaic</a></li>
-                                            <li><a href="">Brick</a></li>
-                                            <li><a href="">Quartz</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Oxide</h4>
-                                        <ul>
-                                            <li><a href="">Oxide Powder</a></li>
-                                            <li><a href="">Marble Powder/ Lime</a></li>
-                                        </ul>
-                                        <h4 class="menu-category">Flooring Accessories</h4>
-                                        <ul>
-                                            <li><a href="">Wall Base</a></li>
-                                            <li><a href="">Maoulding</a></li>
-                                        </ul>
-
-
-                                    </div>
-
-                                </div>
-                            </li>
-
-                            <li class="header_li"><a href="">Construction Chemicals</a>
-                                <div class="menu-sub construction-chemicals">
-                                    <div class="menu-col-2">
-                                        <h4 class="menu-category">Products</h4>
-                                        <ul>
-                                            <li><a href="">Water Proofing</a></li>
-                                            <li><a href="">Construction Adhesive</a></li>
-                                            <li><a href="">Shuttering Oil</a></li>
-                                            <li><a href="">Concrete Admixture</a></li>
-                                            <li><a href="">Grauting Material</a></li>
-                                            <li><a href="">Sealant</a></li>
-                                        </ul> 
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="header_li"><a href="">Sustainable</a>
-                            </li>
-                            <li class="header_li"><a href="">Discover</a>
-                            </li>
-                            <li class="header_li"><a href="">More</a>
-                                <div class="menu-sub more">
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Hardware and Railing</h4>
-                                        <ul>
-                                            <li><a href="">Glass Hardware</a></li>
-                                            <li><a href="">Handles and Knobs</a></li>
-                                            <li><a href="">Floor Hings</a></li>
-                                            <li><a href="">Door Closers</a></li>
-                                            <li><a href="">Latches</a></li>
-                                            <li><a href="">Deadbolt</a></li>
-                                            <li><a href="">Smoke Detectors</a></li>
-                                            <li><a href="">Security Systems</a></li>
-                                            <li><a href="">Plumbing Hardware</a></li>
-                                            <li><a href="">Curtain Rings & Rods</a></li>
-                                            <li><a href="">Railing Systems</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Doors and Windows</h4>
-                                        <ul>
-                                            <li><a href="">UPVC</a></li>
-                                            <li><a href="">Wooden</a></li>
-                                            <li><a href="">Aluminium</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="menu-col-1">
-                                        <h4 class="menu-category">Modular</h4>
-                                        <ul>
-                                            <li><a href="">Kitchen</a></li>
-                                            <li><a href="">Bath</a></li>
-                                            <li><a href="">Wardrobe</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-
-            <div class="hamburger-menu-container">
-                <div class="hamburger-menu">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-    <div class="container-fluid">
-        <main>
-          <div class="row g-3">
-            <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3 billing__heading">Billing address</h4>
-              <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                  <div class="col-sm-6">
-                    <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                    <div class="invalid-feedback">
-                      Valid first name is required.
-                    </div>
+                    <h4 class="menu-category">TMT Steel</h4>
+                    <ul>
+                      <li><a href="">Fe415</a></li>
+                      <li><a href="">Fe500</a></li>
+                      <li><a href="">Fe550</a></li>
+                      <li><a href="">Fe600</a></li>
+                    </ul>
                   </div>
-      
-                  <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                    <div class="invalid-feedback">
-                      Valid last name is required.
-                    </div>
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Structural Steel</h4>
+                    <ul>
+                      <li><a href="">MS Pipe</a></li>
+                      <li><a href="">MS Angle</a></li>
+                      <li><a href="">MS Beam</a></li>
+                      <li><a href="">MS Channel</a></li>
+                      <li><a href="">HR Sheet</a></li>
+                      <li><a href="">HR coil</a></li>
+                      <li><a href="">SS Coil</a></li>
+                    </ul>
                   </div>
-      
-      
-                  <div class="col-12">
-                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    <div class="invalid-feedback">
-                      Please enter a valid email address for shipping updates.
-                    </div>
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Aggregates</h4>
+                    <ul>
+                      <li><a href="">Coarse</a></li>
+                      <li><a href="">Fine</a></li>
+                    </ul>
+
+                    <h4 class="menu-category">Construction Pipes</h4>
+                    <ul>
+                      <li><a href="">Cast Iron</a></li>
+                      <li><a href="">GI</a></li>
+                      <li><a href="">Plastic- UPVC, PVC, CPVC</a></li>
+                      <li><a href="">Fitting & Accessories</a></li>
+                    </ul>
                   </div>
-      
-                  <div class="col-12">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                    <div class="invalid-feedback">
-                      Please enter your shipping address.
-                    </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Natural Stones</h4>
+                    <ul>
+                      <li><a href="">Granite</a></li>
+                      <li><a href="">Marble</a></li>
+                      <li><a href="">Sandstone</a></li>
+                      <li><a href="">Limestone</a></li>
+                      <li><a href="">Slate</a></li>
+                      <li><a href="">Quartz</a></li>
+                      <li><a href="">Laterite</a></li>
+                    </ul>
                   </div>
-      
-                  <div class="col-12">
-                    <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                  </div>
-      
-                  <div class="col-md-5">
-                    <label for="country" class="form-label">Country</label>
-                    <select class="form-select" id="country" required>
-                      <option value="">Choose...</option>
-                      <option>India</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid country.
-                    </div>
-                  </div>
-      
-                  <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select class="form-select" id="state" required>
-                      <option value="">Choose...</option>
-                      <option>Jaipur</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please provide a valid state.
-                    </div>
-                  </div>
-      
-                  <div class="col-md-3">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Zip code required.
-                    </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">More</h4>
+                    <ul>
+                      <li><a href="">Cement</a></li>
+                      <li><a href="">Sand</a></li>
+                      <li><a href="">Ready Mix Concrete</a></li>
+                      <li><a href="">Gravel</a></li>
+                      <li><a href="">AAC Block Adhesive</a></li>
+                      <li><a href="">Shuttering PLY</a></li>
+                      <li><a href="">Architectural Glass/ Stones</a></li>
+                      <li><a href="">Timber/ Wood</a></li>
+                      <li><a href="">Plywood</a></li>
+                      <li><a href="">Paint & Finishes</a></li>
+                    </ul>
+
                   </div>
                 </div>
-      
-                <hr class="my-4">
-      
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="same-address">
-                  <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                </div>
-      
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="save-info">
-                  <label class="form-check-label" for="save-info">Save this information for next time</label>
-                </div>
-      
-                <hr class="my-4">
-      
-                <h4 class="mb-3">Payment</h4>
-      
-                <div class="my-3">
-                  <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                    <label class="form-check-label" for="credit">Credit card</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="debit">Debit card</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="paypal">PayPal</label>
+              </li>
+              <li class="header_li"><a href="">HVAC</a>
+                <div class="menu-sub hvac">
+                  <div class="menu-col-2">
+                    <h4 class="menu-category">Products</h4>
+                    <ul>
+                      <li><a href="">Exhaust Fans</a></li>
+                      <li><a href="">Switchgears</a></li>
+                      <li><a href="">Wires & Cables</a></li>
+                      <li><a href="">Distribution Boards</a></li>
+                      <li><a href="">Air Conditioner</a></li>
+                      <li><a href="">Fans</a></li>
+                    </ul>
                   </div>
                 </div>
-      
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <label for="cc-name" class="form-label">Name on card</label>
-                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                    <small class="text-muted">Full name as displayed on card</small>
-                    <div class="invalid-feedback">
-                      Name on card is required
-                    </div>
+              </li>
+              <li class="header_li"><a href="">Sanitaryware</a>
+                <div class="menu-sub sanitaryware">
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Products</h4>
+                    <ul>
+                      <li><a href="">Faucets</a></li>
+                      <li><a href="">Urinals</a></li>
+                      <li><a href="">Wash Basins</a></li>
+                      <li><a href="">Water Closet</a></li>
+                      <li><a href="">Shower & Bath</a></li>
+                      <li><a href="">Cisterns</a></li>
+                      <li><a href="">Water Heaters</a></li>
+                      <li><a href="">Kitchen Sinks</a></li>
+                    </ul>
                   </div>
-      
-                  <div class="col-md-6">
-                    <label for="cc-number" class="form-label">Credit card number</label>
-                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Credit card number is required
-                    </div>
-                  </div>
-      
-                  <div class="col-md-3">
-                    <label for="cc-expiration" class="form-label">Expiration</label>
-                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Expiration date required
-                    </div>
-                  </div>
-      
-                  <div class="col-md-3">
-                    <label for="cc-cvv" class="form-label">CVV</label>
-                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Security code required
-                    </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Accessories</h4>
+                    <ul>
+                      <li><a href="">Mirriors</a></li>
+                      <li><a href="">Holders</a></li>
+                      <li><a href="">Racks & Hooks</a></li>
+                      <li><a href="">Shelf</a></li>
+                      <li><a href="">Ring</a></li>
+                    </ul>
                   </div>
                 </div>
-      
-                <hr class="my-4">
-      
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-              </form>
-            </div>
+              </li>
+              <li class="header_li"><a href="">Flooring & wall</a>
+                <div class="menu-sub flooring">
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Products</h4>
+                    <ul>
+                      <li><a href="">Hardwood</a></li>
+                      <li><a href="">Marble</a></li>
+                      <li><a href="">Tiles</a></li>
+                      <li><a href="">Vinyl</a></li>
+                      <li><a href="">Granite</a></li>
+                      <li><a href="">Bamboo</a></li>
+                      <li><a href="">Laminate</a></li>
+                      <li><a href="">Linoleum</a></li>
+                      <li><a href="">Terrazzo/ Mosaic</a></li>
+                      <li><a href="">Brick</a></li>
+                      <li><a href="">Quartz</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Oxide</h4>
+                    <ul>
+                      <li><a href="">Oxide Powder</a></li>
+                      <li><a href="">Marble Powder/ Lime</a></li>
+                    </ul>
+                    <h4 class="menu-category">Flooring Accessories</h4>
+                    <ul>
+                      <li><a href="">Wall Base</a></li>
+                      <li><a href="">Maoulding</a></li>
+                    </ul>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="header_li"><a href="">Construction Chemicals</a>
+                <div class="menu-sub construction-chemicals">
+                  <div class="menu-col-2">
+                    <h4 class="menu-category">Products</h4>
+                    <ul>
+                      <li><a href="">Water Proofing</a></li>
+                      <li><a href="">Construction Adhesive</a></li>
+                      <li><a href="">Shuttering Oil</a></li>
+                      <li><a href="">Concrete Admixture</a></li>
+                      <li><a href="">Grauting Material</a></li>
+                      <li><a href="">Sealant</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header_li"><a href="">Sustainable</a>
+              </li>
+              <li class="header_li"><a href="">Discover</a>
+              </li>
+              <li class="header_li"><a href="">More</a>
+                <div class="menu-sub more">
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Hardware and Railing</h4>
+                    <ul>
+                      <li><a href="">Glass Hardware</a></li>
+                      <li><a href="">Handles and Knobs</a></li>
+                      <li><a href="">Floor Hings</a></li>
+                      <li><a href="">Door Closers</a></li>
+                      <li><a href="">Latches</a></li>
+                      <li><a href="">Deadbolt</a></li>
+                      <li><a href="">Smoke Detectors</a></li>
+                      <li><a href="">Security Systems</a></li>
+                      <li><a href="">Plumbing Hardware</a></li>
+                      <li><a href="">Curtain Rings & Rods</a></li>
+                      <li><a href="">Railing Systems</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Doors and Windows</h4>
+                    <ul>
+                      <li><a href="">UPVC</a></li>
+                      <li><a href="">Wooden</a></li>
+                      <li><a href="">Aluminium</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="menu-col-1">
+                    <h4 class="menu-category">Modular</h4>
+                    <ul>
+                      <li><a href="">Kitchen</a></li>
+                      <li><a href="">Bath</a></li>
+                      <li><a href="">Wardrobe</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-        </main>
+        </nav>
+
       </div>
-      <!--footer start-->
-      <footer>
-        <div class="first">
-            <div class="image">
-                <img src="img/footer.png" alt="Footer Image" srcset="">
-            </div>
-            <div class="address">
-                <p class="address__bar">
-                    75, Jhotwara Industrial Area, Jaipur, Rajasthan-302012
-                </p>
-                <p class="cin">
-                    CIN No. U 12345 DL 2020 PLC 098765
-                </p>
-            </div>
 
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
 
-        </div>
-        <div class="second">
-            <h4 class="second-about"> About</h4>
-            <p> About Us</p>
-            <p>Blog</p>
-            <p>Sell on Seventh Square</p>
-            <p> Media</p>
-            <p> Careers</p>
-            <p> Customer Stories</p>
-        </div>
-        <div class="third">
-            <h4>Help</h4>
-            <p>Contact Us</p>
-            <p>Terms & Consitions</p>
-            <p>Privacy Policy</p>
-            <p> FAQ's</p>
-            <p>Track Your Order</p>
-        </div>
-        <div class="fourth">
-            <h4>Resources</h4>
-            <p>How it Works</p>
-            <p>Request for Quote</p>
-            <p>Request for Proporsal</p>
-            <p>Request for Information</p>
-            <p>Blanket PO</p>
-            <p>Payment Options</p>
-        </div>
-        <div class="fifth">
-            <h2 class=" h3">Subscribe our Newsletter</h2>
-            <div class="input__group">
-                <ul>
-                    <li><input type=" email" class="form-control" placeholder="Enter your email"></li>
-                    <li><button class="btn-theme" type="submit">Subscribe</button></li>
-                </ul>
-            </div>
-            <div class="social__icons">
-                <ul>
-                    <li><i class="fab fa-facebook-f fa-2x"></i></li>
-                    <li><i class="fab fa-linkedin-in fa-2x"></i></li>
-                    <li><i class="fab fa-instagram fa-2x"></i></li>
-                    <li><i class="fab fa-pinterest-p fa-2x"></i></li>
-                    <li><i class="fab fa-twitter fa-2x"></i></li>
-                    <li><i class="fab fa-whatsapp fa-2x"></i></li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
-    <div class="bottomnav" style="background: #01011e;color: rgb(255,255,255);">
+  </header>
+  <main>
+    <div class="header">
+      <H1>Checkout</H1>
+    </div>
+    <div class="left">
+      <div class="left__item1 shadow">
+        <h1>Shipping details</h1>
+      </div>
+      <div class="left__item2 shadow">
+        <!-- shipping address shown -->
         <div class="row">
-          <div class="col-sm-12 col-md-2 col-xl-8" style="padding-top: 5px;padding-bottom: 5px;text-align: center;">
-            <span style="font-size: 14px;">Copyright © 2021<a href="#">&nbsp;</a>Seventh Square
-              Internet Pvt. Ltd.</span>
+          <address class="col-md-6 address__box">
+            <b>Prince Kumar.</b>
+            <p>1355 Market St, Suite 900</p>
+            <p>San Francisco, CA 94103</p>
+            <p>P: (123) 456-7890</p>
+            <p>first.last@example.com</p>
+          </address>
+          <address class="col-md-6 address__map">
+            <button type="submit" class="btn btn-dark">Mark Your Current Location</button>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1163.3947218467797!2d75.75007248362812!3d26.95264143232559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3031bae50d9%3A0x816cb9713e591072!2sSeventh%20Square%20Internet%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1616364451414!5m2!1sen!2sin"
+              width="350" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </address>
+        </div>
+        <!-- --------------------------------------------- -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Address</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-row zip">
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control" id="fname" placeholder="Full Name">
+                    </div>
+                    <div class="form-group col-md-5">
+                      <input type="number" class="form-control" id="phone" placeholder="Contact Number">
+                    </div>
+                  </div>
+                  <div class="form-group zip">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Street Address">
+                  </div>
+                  <div class="form-row zip">
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <select id="inputState" class="form-control">
+                        <option selected>State</option>
+                        <option>Rajasthan</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="text" class="form-control zip" id="inputZip" placeholder="Pin Code">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Continue to this Address</button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-2 col-xl-4 d-none d-md-block"
-            style="padding: 0px;text-align: center;border-left: 1px solid rgba(255,255,255,0.6) ;">
-            <div><img src="img/p.jpg" style="margin-top: 5px;"></div>
+        </div>
+        <!-- --------------------------------------------------------??? -->
+        <div class="form-row">
+          <button type="submit" class="btn btn-dark">Continue to this Address</button>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+            Add Another Address
+          </button>
+        </div>
+      </div>
+      <div class="left__item3 shadow">
+        <h1>Payment Details</h1>
+      </div>
+      <div class="left__item4 shadow">
+        <div class="accordion" id="accordionExample">
+          <div class="card shadow-sm">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Debit / Credit Card Payment
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-5">
+                      <input type="number" class="form-control" id="card__number" placeholder="Card Number">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your Account number with
+                        anyone else.</small>
+                    </div>
+                    <div class="form-group col-md-5">
+                      <input type="text" class="form-control" id="card__name" placeholder="Account Holder's Name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-md-3">
+                      <input type="number" class="form-control" id="card__expiry" placeholder="Card Expired on">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <input type="number" class="form-control" id="card__cvv" placeholder="CVV">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-md-3">Make Payment</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Pay thorough Net Banking
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <h4>Popular Banks</h4>
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input type="radio" aria-label="Radio button for following text input">
+                      <img src="../img/sbi.png" alt="" width="50px" height="20px">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <select class="custom-select col-md-6">
+                      <option selected>Select Your Bank</option>
+                      <option value="1">SBI </option>
+                      <option value="2">PNB</option>
+                      <option value="3">HDFC</option>
+                      <option value="3">AXIS</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary col-md-3">Make Payment</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Pay Through UPI G-Pay / PhonePay / Paytm
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-5">
+                      <input type="number" class="form-control" id="upi__number" placeholder="UPI ID">
+                      <small id="emailHelp" class="form-text text-muted">Please Enter Your UPI Number above.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-md-3">Make Payment</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Pay Through Wallet
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-5">
+                      <input type="radio" aria-label="Radio button for following text input"> <img
+                        src="../img/paytm.png" alt="" width="70px" height="50px">
+                      <small id="emailHelp" class="form-text text-muted">Paytm Balance : 2398 Rs. </small>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-md-3">Pay through Wallet</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <script src="../js/checkout.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  </body>
+    </div>
+    <div class="right ">
+      <div class="right__item1 shadow">
+        <h1>Your Order</h1>
+      </div>
+      <div class="right__item2 shadow">
+        <div class="products">
+          <img src="../img/man.png" alt="">
+          <div class="product__info">
+            <p class="heading"><b>Steel rod (5*1000 cm)</b></p>
+            <input type="number" placeholder="00">
+            <p>2999 <span>INR</span></p>
+
+          </div>
+        </div>
+        <div class="products">
+          <img src="../img/man.png" alt="">
+          <div class="product__info">
+            <p class="heading"><b>Steel rod (5*1000 cm)</b></p>
+            <input type="number" placeholder="00">
+            <p>2999 <span>INR</span></p>
+
+          </div>
+        </div>
+        <div class="products">
+          <img src="../img/man.png" alt="">
+          <div class="product__info">
+            <p class="heading"><b>Steel rod (5*1000 cm)</b></p>
+            <input type="number" placeholder="00">
+            <p>2999 <span>INR</span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="right__item3">subtotal</div>
+    </div>
+  </main>
+  <footer>
+    <div class="first">
+      <div class="image">
+        <img src="../img/footer.png" alt="Footer Image" srcset="">
+      </div>
+      <div class="address">
+        <p class="address__bar">
+          75, Jhotwara Industrial Area, Jaipur, Rajasthan-302012
+        </p>
+        <p class="cin">
+          CIN No. U 12345 DL 2020 PLC 098765
+        </p>
+      </div>
+
+
+    </div>
+    <div class="second">
+      <h4 class="second-about"> About</h4>
+      <p> About Us</p>
+      <p>Blog</p>
+      <p>Sell on Seventh Square</p>
+      <p> Media</p>
+      <p> Careers</p>
+      <p> Customer Stories</p>
+    </div>
+    <div class="third">
+      <h4>Help</h4>
+      <p>Contact Us</p>
+      <p>Terms & Consitions</p>
+      <p>Privacy Policy</p>
+      <p> FAQ's</p>
+      <p>Track Your Order</p>
+    </div>
+    <div class="fourth">
+      <h4>Resources</h4>
+      <p>How it Works</p>
+      <p>Request for Quote</p>
+      <p>Request for Proporsal</p>
+      <p>Request for Information</p>
+      <p>Blanket PO</p>
+      <p>Payment Options</p>
+    </div>
+    <div class="fifth">
+      <h2 class=" h3">Subscribe our Newsletter</h2>
+      <div class="input__group">
+        <ul>
+          <li><input type=" email" class="form-control" placeholder="Enter your email"></li>
+          <li><button class="btn-theme" type="submit">Subscribe</button></li>
+        </ul>
+      </div>
+      <div class="social__icons">
+        <ul>
+          <li><i class="fab fa-facebook-f fa-2x"></i></li>
+          <li><i class="fab fa-linkedin-in fa-2x"></i></li>
+          <li><i class="fab fa-instagram fa-2x"></i></li>
+          <li><i class="fab fa-pinterest-p fa-2x"></i></li>
+          <li><i class="fab fa-twitter fa-2x"></i></li>
+          <li><i class="fab fa-whatsapp fa-2x"></i></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>

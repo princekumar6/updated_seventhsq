@@ -21,7 +21,7 @@ main {
 .left {
   margin: 10px 60px;
   display: grid;
-  grid-template-rows: 50px 340px 100px auto;
+  grid-template-rows: 40px 340px 100px auto;
   grid-column: 1 / span 5;
 }
 .zip {
@@ -57,6 +57,9 @@ main {
 margin-left: 20%;
 background-color:rgb(255, 255, 255);
 color: rgb(121, 118, 118);
+}
+.left__item2 .button__continue{
+  float: left;
 }
 .left__item2 address p {
   margin: 0;
@@ -163,7 +166,7 @@ padding: 0;
   margin-top: 10px;
   margin-right: 40px;
   display: grid;
-  grid-template-rows: 50px 450px;
+  grid-template-rows: 40px 450px;
 }
 .right__item1 h1 {
   padding: 10px;
